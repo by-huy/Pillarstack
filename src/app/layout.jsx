@@ -1,8 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 import Navbar from "@/components/Header/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const overusedgrotesk = localFont({
   src: [
@@ -14,7 +15,7 @@ const overusedgrotesk = localFont({
 });
 
 export const metadata = {
-  title: "Webstack",
+  title: "Pillarstack",
   description: "assorted resources for frontend developers and web designers",
 };
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
