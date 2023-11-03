@@ -11,7 +11,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-text font-medium max-w-lg mx-auto text-base">
-        Collection of resources and tools that can help you improve your workflow and grow as a developer and designer.
+        Explore curated and handpicked goodies that enhance your workflow and cultivate your growth as a developer and designer.
         </p>
       </section>
       <section>

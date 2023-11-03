@@ -7,5 +7,14 @@
         /* border: 1px solid red;s */
     }
 
+    ::-moz-selection {
+        background: #555555
+      }
+      ::-webkit-selection {
+        background: #555555
+      }
+      ::selection {
+        background: #555555
+      }
 
 }
