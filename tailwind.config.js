@@ -12,10 +12,13 @@ module.exports = {
       'super-dark-gray': '#1A1A1A',
       'dim-gray': '#555555',
       'light-gray': '#878787',
+      'gray': '#D1D1D1',
       'accent': '#F7F7F7',
       'text': '#CCCCCC',
       'primary': '#EFECE6',
-      'gradient': '#E4DED3',
+      'gradient': '#D0C7B3',
+      'gradient2': '#968A73',
+      'gradient3': '#675E4C',
     },
     extend: {
       fontFamily: {

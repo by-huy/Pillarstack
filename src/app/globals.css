@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    * {
+        /* border: 1px solid red;s */
+    }
+
+
+}
