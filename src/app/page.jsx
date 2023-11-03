@@ -1,3 +1,5 @@
+import ResourceCard from "@/components/Card/ResourceCard";
+
 export default function Home() {
   return (
     <main className="bg-white flex min-h-screen flex-col items-center justify-between">
@@ -13,7 +15,7 @@ export default function Home() {
         </p>
       </section>
       <section>
-        
+        <ResourceCard />
       </section>
     </main>
   );

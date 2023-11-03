@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link href="/">
           <LogoSimple />
           <LogoFull />
-        </Link >
+        </Link>
         <div className="flex items-center gap-x-8">
           <Link className="font-medium hidden sm:block" href="/about">
             About
