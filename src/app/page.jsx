@@ -2,7 +2,7 @@ import ResourceCard from "@/components/Card/ResourceCard";
 
 export default function Home() {
   return (
-    <main className="bg-white flex min-h-screen flex-col items-center justify-between">
+    <main className="bg-white">
       <section className="mx-auto text-center max-w-3xl space-y-5 my-20">
         <h1 className=" text-display text-center text-accent">
           Assorted resources{" "}
@@ -15,7 +15,13 @@ export default function Home() {
         </p>
       </section>
       <section>
+        <div className="grid grid-cols-3 gap-5">
+
         <ResourceCard />
+        <ResourceCard />
+        <ResourceCard />
+        <ResourceCard />
+        </div>
       </section>
     </main>
   );

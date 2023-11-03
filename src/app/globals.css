@@ -4,7 +4,7 @@
 
 @layer base {
     * {
-        /* border: 1px solid red;s */
+        /* border: 1px solid red; */
     }
 
     ::-moz-selection {
