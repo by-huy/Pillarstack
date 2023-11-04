@@ -1,8 +1,10 @@
 import ResourceCard from "@/components/Card/ResourceCard";
+import Modal from "@/components/Modal/Modal";
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main>
+      {/* <Modal /> */}
       <section className="mx-auto text-center max-w-3xl space-y-5 my-20">
         <h1 className=" text-display text-center text-accent">
           Assorted resources{" "}
@@ -15,7 +17,7 @@ export default function Home() {
         </p>
       </section>
       <section>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
 
         <ResourceCard />
         <ResourceCard />
@@ -23,6 +25,7 @@ export default function Home() {
         <ResourceCard />
         </div>
       </section>
+
     </main>
   );
 }

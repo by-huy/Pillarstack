@@ -1,13 +1,14 @@
 import Image from "next/image";
 import profile from '../../../public/images/profile.webp'
+import thumbnail1 from '../../../public/images/thumb6.png'
 import Link from "next/link";
 
 export default function ResourceCard() {
   return (
-    <Link href="/" className=" bg-dark-charcoal border-4 border-outline rounded-xl border-opacity-[0.15] overflow-hidden w-full">
+    <Link href="/" className=" bg-dark-charcoal border-4 border-outline rounded-xl border-opacity-15 overflow-hidden w-full ">
       <div className=" bg-super-dark-gray flex relative items-center justify-center pb-[50%] pt-[50%] rounded-b-2xl">
-        <div className="absolute  rounded-md overflow-hidden">
-            <Image width={200} height={200} alt="sds" src={profile} />
+        <div className="absolute w-2/3 rounded-3xl overflow-hidden shadow-shine bg-transparent bg-opacity-0">
+            <Image loading="lazy"  placeholder="blur" className="w-full" width={200} height={200} alt="sds" src={thumbnail1} />
         </div>
       </div>
       <div className=" bg-dark-charcoal p-6 flex justify-between items-center">

@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      'transparent': 'transparent',
       'bg': '#0C0D0E',
       'dark-charcoal': '#101214',
       'super-dark-gray': '#1A1A1A',
@@ -48,6 +49,12 @@ module.exports = {
       },
       lineHeight: {
         'base': '150%'
+      },
+      boxShadow: {
+        'shine': '0px 0px 58px 20px rgba(85, 85, 85, 0.20);'
+      },
+      borderOpacity: {
+        '15': '0.15'
       }
     },
   },

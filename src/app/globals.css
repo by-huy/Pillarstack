@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-    * {
-        /* border: 1px solid red; */
-    }
+  * {
+    /* border: 1px solid red; */
+  }
 
-    ::-moz-selection {
-        background: #555555
-      }
-      ::-webkit-selection {
-        background: #555555
-      }
-      ::selection {
-        background: #555555
-      }
-
+  ::-moz-selection {
+    background: #555555;
+  }
+  ::-webkit-selection {
+    background: #555555;
+  }
+  ::selection {
+    background: #555555;
+  }
 }
