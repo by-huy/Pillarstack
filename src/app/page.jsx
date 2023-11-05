@@ -3,22 +3,20 @@ import Modal from "@/components/Modal/Modal";
 import { createClient } from "contentful";
 
 async function fetchContentful() {
-
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_KEY, 
-  })
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
 
   const res = await client.getEntries({
-    content_type: 'resourcesPage'
-  })
+    content_type: "resourcesPage",
+  });
 
-  return res.items
+  return res.items;
 }
 
 export default async function Home() {
-
-  const resources = await fetchContentful()
+  const resources = await fetchContentful();
 
   return (
     <main>
@@ -37,13 +35,9 @@ export default async function Home() {
       </section>
       <section>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          {
-            resources.map((resource) => {
-
-              return <ResourceCard key={resource.sys.id} resource={resource} />
-              
-            })
-          }
+          {resources.map((resource) => {
+            return <ResourceCard key={resource.sys.id} resource={resource} />;
+          })}
         </div>
       </section>
     </main>
