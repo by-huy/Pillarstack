@@ -11,6 +11,7 @@ const overusedgrotesk = localFont({
       path: "../../public/fonts/OverusedGrotesk-VF.woff2",
     },
   ],
+  display: "block",
   variable: "--font-overusedgrotesk",
 });
 
