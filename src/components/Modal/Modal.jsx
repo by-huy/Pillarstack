@@ -1,5 +1,4 @@
 import Image from "next/image";
-import thumbnail1 from "../../../public/images/thumb6.png";
 import ModalButton from "./ModalButton";
 import Button from "../Button/Button";
 import Link from "next/link";
@@ -24,7 +23,6 @@ export default function Modal() {
                   width={200}
                   height={200}
                   alt="sds"
-                  src={thumbnail1}
                 />
               </div>
             </div>

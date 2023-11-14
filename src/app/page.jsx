@@ -1,8 +1,9 @@
-import ResourceCard from "@/components/Card/ResourceCard";
-import Modal from "@/components/Modal/Modal";
+import ResourceContainer from "@/components/Card/ResourceContainer";
+import Tab from "@/components/TabNavigation/TabButtons";
 import { createClient } from "contentful";
+import { Suspense } from "react";
 
-async function fetchContentful() {
+async function fetchCategories() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -10,18 +11,19 @@ async function fetchContentful() {
 
   const res = await client.getEntries({
     content_type: "resourcesPage",
+    include: 2,
   });
 
-  return res.items;
+  return res.items
 }
 
-export default async function Home() {
-  const resources = await fetchContentful();
+export default async function Home({ searchParams }) {
+  const { category } = searchParams;
+  const cat = await fetchCategories()
 
   return (
     <main>
-      {/* <Modal /> */}
-      <section className="mx-auto text-center max-w-3xl space-y-5 my-20">
+      <section className="mx-auto text-center max-w-3xl space-y-5 mt-20 mb-32">
         <h1 className=" text-display text-center text-accent">
           Assorted resources{" "}
           <span className=" text-light-gray">
@@ -34,12 +36,12 @@ export default async function Home() {
         </p>
       </section>
       <section>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          {resources.map((resource) => {
-            return <ResourceCard key={resource.sys.id} resource={resource} />;
-          })}
-        </div>
+      <Tab cat={cat} />
+      <Suspense>
+        <ResourceContainer category={category} />
+      </Suspense>
       </section>
     </main>
   );
 }
+

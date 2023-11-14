@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header>
-      <nav className=" px-6 py-1 border border-gray border-opacity-20 mt-4 bg-dark-charcoal rounded-2xl flex items-center justify-between">
+      <nav className=" px-6 pt-1 pb-2 border-b rounded-b border-gray border-opacity-20 mt-4  flex items-center justify-between">
         <Link href="/">
           <LogoSimple />
           <LogoFull />

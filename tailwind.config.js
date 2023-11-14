@@ -51,7 +51,8 @@ module.exports = {
         'base': '150%'
       },
       boxShadow: {
-        'shine': '0px 0px 58px 20px rgba(85, 85, 85, 0.20);'
+        'shine': '0px 0px 58px 20px rgba(85, 85, 85, 0.20);',
+        'bright': '0px 0px 58px 20px rgba(85, 85, 85, 0.35);'
       },
       borderOpacity: {
         '15': '0.15'
