@@ -27,7 +27,7 @@ module.exports = {
         overusedgrotesk: ['var(--font-overusedgrotesk)'],
       },
       fontSize: {
-        'display': ['4rem', {
+        'display': ['clamp(2.75rem, 5vw, 7rem)', {
           lineHeight: '96.5%',
           letterSpacing: '-3.5%',
           fontWeight: '700'

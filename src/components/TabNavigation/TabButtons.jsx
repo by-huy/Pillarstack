@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+// ... (other imports)
+
 export default function TabButtons({ cat }) {
   const router = useRouter();
 
@@ -15,16 +17,12 @@ export default function TabButtons({ cat }) {
     categoryCount[categoryItem] = (categoryCount[categoryItem] || 0) + 1;
   });
 
-  const categories = Object.keys(categoryCount);
   const [selectedCategory, setSelectedCategory] = useState("");
 
-  const onChangeHandler = (e) => {
-    categories.forEach((category) => {
-      if (e.target.innerText === category) {
-        router.push(`/?category=${category}`, { scroll: false });
-        setSelectedCategory(category);
-      }
-    });
+  const onChangeHandler = (e, category) => {
+    e.preventDefault();
+    router.push(`/?category=${category}`, { scroll: false });
+    setSelectedCategory(category);
   };
 
   return (
@@ -35,7 +33,7 @@ export default function TabButtons({ cat }) {
           router.push("/", { scroll: false });
           setSelectedCategory("");
         }}
-        className={`py-1 px-4 flex gap-x-1 font-medium border rounded-full hover:border-text transition-all text-sm ${
+        className={`py-1 px-4 flex gap-x-1 font-medium border border-dim-gray rounded-full hover:border-text transition-all text-sm ${
           selectedCategory === "" ? "bg-accent text-bg" : " bg-bg text-accent"
         }`}
       >
@@ -45,19 +43,14 @@ export default function TabButtons({ cat }) {
         return (
           <button
             key={item}
-            onClick={(e) => onChangeHandler(e)}
-            className={`py-1 px-4 flex gap-x-1 font-medium border rounded-full hover:border-text transition-all text-sm relative ${
-              selectedCategory === item ? "text-bg" : " bg-bg text-accent"
+            onClick={(e) => onChangeHandler(e, item)}
+            className={`py-1 px-4 flex gap-x-1 font-medium border  border-dim-gray rounded-full hover:border-text transition-all text-sm relative ${
+              selectedCategory === item ? "text-bg bg-accent" : " bg-bg text-accent"
             }`}
           >
-            {
-              selectedCategory === item && (
-
-                <motion.div layoutId="active-pill" className="absolute inset-0 bg-accent -z-10" style={{borderRadius: 9999}} />
-              )
-            }
+            
             <span className=" text-sm ">{item}</span>
-            <span className="flex justify-center items-center text-text text-xxs leading-none">
+            <span className={`flex justify-center items-center ${selectedCategory === item ? "text-bg" : "text-text"} text-xxs leading-none`}>
               {count}
             </span>
           </button>

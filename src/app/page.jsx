@@ -14,12 +14,12 @@ async function fetchCategories() {
     include: 2,
   });
 
-  return res.items
+  return res.items;
 }
 
 export default async function Home({ searchParams }) {
   const { category } = searchParams;
-  const cat = await fetchCategories()
+  const cat = await fetchCategories();
 
   return (
     <main>
@@ -36,12 +36,11 @@ export default async function Home({ searchParams }) {
         </p>
       </section>
       <section>
-      <Tab cat={cat} />
-      <Suspense>
-        <ResourceContainer category={category} />
-      </Suspense>
+        <Tab cat={cat} />
+        <Suspense>
+          <ResourceContainer category={category} />
+        </Suspense>
       </section>
     </main>
   );
 }
-
