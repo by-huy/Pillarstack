@@ -7,6 +7,14 @@
     /* border: 1px solid red; */
   }
 
+  p {
+    @apply tracking-base
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply tracking-close
+  }
+
   ::-moz-selection {
     background: #555555;
   }
