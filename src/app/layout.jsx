@@ -17,7 +17,7 @@ const overusedgrotesk = localFont({
 
 export const metadata = {
   title: "Pillarstack",
-  description: "assorted resources for frontend developers and web designers",
+  description: "Assorted resources for frontend developers and web designers",
 };
 
 export default function RootLayout({ children }) {

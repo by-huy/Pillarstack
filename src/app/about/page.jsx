@@ -9,7 +9,7 @@ export default function About() {
           About <span className="text-light-gray">Pillarstack</span>
         </h1>
       </div>
-      <div className=" col-start-6 col-span-5 text-3xl leading-[130%] text-light-gray font-medium space-y-7">
+      <div className=" col-start-6 col-span-5 text-h4 leading-[130%] text-light-gray font-medium space-y-7">
         <p className="space-y-8 flex flex-col">
           <span>I created Pillarstack to address the frustrations I encountered when I started out in frontend development and web design. Hunting for resources and tools consumed a lot valuable time that could have been better spent honing my skills. </span>
           
