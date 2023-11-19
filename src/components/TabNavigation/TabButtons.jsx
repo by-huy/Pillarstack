@@ -3,6 +3,7 @@
 // Note: This component is used to filter resources by category
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function TabButtons({ cat }) {
   const router = useRouter();
@@ -45,10 +46,16 @@ export default function TabButtons({ cat }) {
           <button
             key={item}
             onClick={(e) => onChangeHandler(e)}
-            className={`py-1 px-4 flex gap-x-1 font-medium border rounded-full hover:border-text transition-all active:text-dark-charcoal text-sm ${
-              selectedCategory === item ? "bg-accent text-bg" : " bg-bg text-accent"
+            className={`py-1 px-4 flex gap-x-1 font-medium border rounded-full hover:border-text transition-all text-sm relative ${
+              selectedCategory === item ? "text-bg" : " bg-bg text-accent"
             }`}
           >
+            {
+              selectedCategory === item && (
+
+                <motion.div layoutId="active-pill" className="absolute inset-0 bg-accent -z-10" style={{borderRadius: 9999}} />
+              )
+            }
             <span className=" text-sm ">{item}</span>
             <span className="flex justify-center items-center text-text text-xxs leading-none">
               {count}

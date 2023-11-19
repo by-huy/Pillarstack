@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <header>
       <nav className=" px-6 pt-1 pb-2 border-b rounded-b border-gray border-opacity-20 mt-4  flex items-center justify-between">
-        <Link href="/">
+        <Link aria-label="Back to Home" href="/">
           <LogoSimple />
           <LogoFull />
         </Link>
