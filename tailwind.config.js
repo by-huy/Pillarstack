@@ -6,6 +6,23 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontSize: {
+      'display': ['clamp(2.75rem, 5vw, 7rem)', {
+        lineHeight: '96.5%',
+        letterSpacing: '-3.5%',
+        fontWeight: '700'
+      }],
+      'h1': '3.5rem',
+      'h2': '3rem',
+      'h3': '2.5rem',
+      'h4': '2rem',
+      'h5': '1.5rem',
+      'h6': '1.25rem',
+      'base': '1.125rem',
+      'sm': '1rem',
+      'xs': '0.875rem',
+      'xxs': '0.75rem',
+    },
     colors: {
       'transparent': 'transparent',
       'bg': '#0C0D0E',
@@ -26,23 +43,7 @@ module.exports = {
       fontFamily: {
         overusedgrotesk: ['var(--font-overusedgrotesk)'],
       },
-      fontSize: {
-        'display': ['clamp(2.75rem, 5vw, 7rem)', {
-          lineHeight: '96.5%',
-          letterSpacing: '-3.5%',
-          fontWeight: '700'
-        }],
-        'h1': '3.5rem',
-        'h2': '3rem',
-        'h3': '2.5rem',
-        'h4': '2rem',
-        'h5': '1.5rem',
-        'h6': '1.25rem',
-        'base': '1.125rem',
-        'sm': '1rem',
-        'xs': '0.875rem',
-        'xxs': '0.75rem',
-      },
+      
       letterSpacing: {
         'close': '-3.5%',
         'base': '-1%'

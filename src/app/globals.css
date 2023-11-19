@@ -3,16 +3,39 @@
 @tailwind utilities;
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   * {
     /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
   }
 
   p {
-    @apply tracking-base
+    @apply tracking-base;
   }
 
-  h1, h2, h3, h4, h5 {
-    @apply tracking-close
+  .section-padding {
+    @apply  px-8 sm:px-[5%];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply tracking-close;
   }
 
   ::-moz-selection {

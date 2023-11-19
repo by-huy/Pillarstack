@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body className="font-overusedgrotesk antialiased bg-bg px-12 tracking-base text-accent box-border">
+      <body className="font-overusedgrotesk antialiased bg-bg section-padding tracking-base text-accent box-border">
         <Navbar />
         {children}
         <Footer />
