@@ -15,7 +15,8 @@
     "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

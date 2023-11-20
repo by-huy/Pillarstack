@@ -14,21 +14,21 @@ export default function Footer() {
       href: "/",
       label: "Add a resource",
     },
-    {
-      id: 3,
-      href: "/",
-      label: "Contribute to this project",
-    },
+    // {
+    //   id: 3,
+    //   href: "/",
+    //   label: "Contribute to this project",
+    // },
     {
       id: 4,
-      href: "/",
+      href: "https://ko-fi.com/supporthuyng",
       label: "Support this project",
     },
-    {
-      id: 5,
-      href: "/",
-      label: "Share this project",
-    },
+    // {
+    //   id: 5,
+    //   href: "/",
+    //   label: "Share this project",
+    // },
   ];
 
   return (
@@ -42,7 +42,7 @@ export default function Footer() {
           <span>Made by</span>
           <Link className="font-bold" href="https://www.huyng.xyz">HuyNG</Link>
         </div>
-        <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-2">
+        <ul className="grid sm:grid-cols-2 lg:flex gap-x-12 gap-y-2">
           {links.map((link) => (
             <li key={link.id} className="flex">
               <Link href={link.href}>{link.label}</Link>
