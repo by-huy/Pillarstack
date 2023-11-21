@@ -11,7 +11,7 @@ export default function Footer() {
     },
     {
       id: 2,
-      href: "/",
+      href: "https://forms.gle/PftXkai3sNZquWu68",
       label: "Add a resource",
     },
     // {
@@ -45,7 +45,13 @@ export default function Footer() {
         <ul className="grid sm:grid-cols-2 lg:flex gap-x-12 gap-y-2">
           {links.map((link) => (
             <li key={link.id} className="flex">
-              <Link href={link.href}>{link.label}</Link>
+              {link.id === 2 || link.id === 4 ? (
+                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                  {link.label}
+                </a>
+              ) : (
+                <Link href={link.href}>{link.label}</Link>
+              )}
               <GoArrowUpRight className=" fill-light-gray stroke-[0.2]" />
             </li>
           ))}
