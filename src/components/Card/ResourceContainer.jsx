@@ -16,6 +16,7 @@ async function fetchContentful(category) {
     order: ["-fields.publishedDate"],
     "fields.category.sys.contentType.sys.id": "categories",
     "fields.category.fields.category": category === "all" ? null : category,
+    
   });
 
   return res.items;

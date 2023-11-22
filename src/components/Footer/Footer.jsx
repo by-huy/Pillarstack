@@ -46,9 +46,9 @@ export default function Footer() {
           {links.map((link) => (
             <li key={link.id} className="flex">
               {link.id === 2 || link.id === 4 ? (
-                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                <Link href={link.href} target="_blank" rel="noopener noreferrer">
                   {link.label}
-                </a>
+                </Link>
               ) : (
                 <Link href={link.href}>{link.label}</Link>
               )}
