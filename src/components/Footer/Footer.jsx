@@ -38,21 +38,36 @@ export default function Footer() {
         <FooterTitle />
       </div>
       <div className="flex flex-col sm:flex-row items-start justify-between pt-6 pb-10 text-text">
-        <div className="space-x-1 pb-4">
-          <span>Made by</span>
-          <Link className="font-bold" target="_blank" href="https://www.huyng.xyz">HuyNG</Link>
+        <div className="space-x-1 pb-4 flex w-40">
+          <span className="w-fit flex-nowrap whitespace-nowrap">Made by</span>
+          <Link
+            className="font-bold relative overflow-y-hidden w-full group h-fit"
+            target="_blank"
+            href="https://www.huyng.xyz"
+          >
+            <span className="flex group-hover:-translate-y-5 group-hover:opacity-0 transition-all ease-in-out-circ duration-500">HuyNG</span>
+            <span className="absolute inset-0 group-hover:translate-y-0 translate-y-5 transition-all ease-in-out-circ duration-500 underline flex-nowrap whitespace-nowrap">HuyNG :)</span>
+          </Link>
         </div>
         <ul className="grid sm:grid-cols-2 lg:flex gap-x-12 gap-y-2">
           {links.map((link) => (
-            <li key={link.id} className="flex">
+            <li key={link.id} className="flex group">
               {link.id === 2 || link.id === 4 ? (
-                <Link href={link.href} target="_blank" rel="noopener noreferrer">
+                <Link
+                  className="group"
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {link.label}
                 </Link>
               ) : (
-                <Link href={link.href}>{link.label}</Link>
+                <Link className="group" href={link.href}>{link.label}</Link>
               )}
-              <GoArrowUpRight className=" fill-light-gray stroke-[0.2]" />
+              <span className="relative overflow-hidden h-fit w-fit">
+                <GoArrowUpRight className="group-hover:-translate-y-5 group-hover:translate-x-5 duration-500 transition-transform ease-in-out-circ fill-light-gray stroke-[0.2]" />
+                <GoArrowUpRight className="absolute top-0 group-hover:translate-x-0 duration-500 group-hover:translate-y-0 transition-all ease-in-out-circ translate-y-5 -translate-x-5 fill-light-gray stroke-[0.2]" />
+              </span>
             </li>
           ))}
         </ul>

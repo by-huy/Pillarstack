@@ -2,8 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Header/Navbar";
 import Footer from "@/components/Footer/Footer";
-import { Analytics } from '@vercel/analytics/react';
-
+import { Analytics } from "@vercel/analytics/react";
 
 const overusedgrotesk = localFont({
   src: [
@@ -17,12 +16,12 @@ const overusedgrotesk = localFont({
 
 export const metadata = {
   title: "Pillarstack",
-  description: "Assorted resources for frontend developers and web designers",
+  description:
+    "Assorted resources for frontend developers and web designers. Explore curated and handpicked goodies that enhance your workflow and cultivate your growth.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    
     <html lang="en" className={`${overusedgrotesk.variable}`}>
       <head>
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
@@ -31,7 +30,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
-      <Analytics />
+        <Analytics />
       </body>
     </html>
   );

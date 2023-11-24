@@ -57,6 +57,9 @@ module.exports = {
       },
       borderOpacity: {
         '15': '0.15'
+      },
+      transitionTimingFunction: {
+        'in-out-circ': 'cubic-bezier(0.85, 0, 0.15, 1)',
       }
     },
   },

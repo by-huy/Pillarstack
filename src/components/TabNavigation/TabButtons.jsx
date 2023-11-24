@@ -23,10 +23,11 @@ export default function TabButtons({ cat }) {
     <div className="mb-8 justify-center gap-x-2 flex-wrap gap-y-2 hidden sm:flex">
       {/* Filtering button for "All" category */}
       <button
+        aria-label="All categories"
         onClick={() => {
           router.push("/", { scroll: false });
         }}
-        className={`py-1 px-4 flex gap-x-1 font-medium border border-dim-gray rounded-full hover:border-text transition-all text-sm ${
+        className={`py-1 px-4 flex gap-x-1 font-medium items-center border border-dim-gray rounded-full hover:border-text transition-all text-sm ${
           activeCategory === "" ? "bg-accent text-bg" : " bg-bg text-accent"
         }`}
       >
@@ -40,12 +41,12 @@ export default function TabButtons({ cat }) {
               e.preventDefault();
               router.push(`/?category=${item}`, { scroll: false });
             }}
-            className={`py-1 px-4 flex gap-x-1 font-medium border  border-dim-gray rounded-full hover:border-text transition-all text-sm relative ${
+            className={`py-1 px-4 flex gap-x-1 font-medium border border-dim-gray rounded-full hover:border-text transition-all relative ${
               activeCategory === item ? "text-bg bg-accent" : " bg-bg text-accent"
             }`}
           >
-            <span className="text-sm">{item}</span>
-            <span className={`flex justify-center items-center ${activeCategory === item ? "text-bg" : "text-text"} text-xxs leading-none`}>
+            <span className="text-sm xl:text-h6 2xl:text-h5">{item}</span>
+            <span className={`flex justify-center items-center ${activeCategory === item ? "text-bg" : "text-text"} text-xxs xl:text-xs 2xl:text-sm leading-none`}>
               {count}
           </span>
           </button>

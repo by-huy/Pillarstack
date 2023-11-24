@@ -12,8 +12,10 @@ export default function Navbar() {
           <LogoFull />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Link className="font-medium hidden sm:block" href="/about">
-            About
+          <Link className="font-medium hidden sm:block relative overflow-hidden group h-fit" href="/about">
+            <span className="flex group-hover:-translate-y-5 group-hover:opacity-0 transition-all ease-in-out-circ duration-500">About</span>
+            <span className="absolute inset-0 group-hover:translate-y-0 translate-y-5 transition-all ease-in-out-circ duration-500 underline">About</span>
+            
           </Link>
           <Button target="_blank" href="https://forms.gle/PftXkai3sNZquWu68">Add a Resource</Button>
         </div>
