@@ -15,7 +15,7 @@ export default function Navbar() {
           <Link className="font-medium hidden sm:block" href="/about">
             About
           </Link>
-          <Button target="_blank" href="">Add a Resource</Button>
+          <Button target="_blank" href="https://forms.gle/PftXkai3sNZquWu68">Add a Resource</Button>
         </div>
       </nav>
     </header>

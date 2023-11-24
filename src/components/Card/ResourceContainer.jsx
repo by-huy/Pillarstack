@@ -13,10 +13,9 @@ async function fetchContentful(category) {
   const res = await client.getEntries({
     content_type: "resourcesPage",
     include: 2,
-    order: ["-fields.publishedDate"],
+    order: ["fields.title"],
     "fields.category.sys.contentType.sys.id": "categories",
     "fields.category.fields.category": category === "all" ? null : category,
-    
   });
 
   return res.items;

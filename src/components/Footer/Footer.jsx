@@ -32,7 +32,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mt-32 ">
+    <footer className="mt-32 mb-16 sm:mb-0">
       <div className="border-b border-b-dim-gray pb-6">
         <span className="sr-only">PILLARSTACK</span>
         <FooterTitle />
@@ -40,7 +40,7 @@ export default function Footer() {
       <div className="flex flex-col sm:flex-row items-start justify-between pt-6 pb-10 text-text">
         <div className="space-x-1 pb-4">
           <span>Made by</span>
-          <Link className="font-bold" href="https://www.huyng.xyz">HuyNG</Link>
+          <Link className="font-bold" target="_blank" href="https://www.huyng.xyz">HuyNG</Link>
         </div>
         <ul className="grid sm:grid-cols-2 lg:flex gap-x-12 gap-y-2">
           {links.map((link) => (

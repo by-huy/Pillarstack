@@ -1,5 +1,6 @@
 import ResourceContainer from "@/components/Card/ResourceContainer";
 import Tab from "@/components/TabNavigation/TabButtons";
+import TabMobile from "@/components/TabNavigation/TabButtonsMobile";
 import { createClient } from "contentful";
 import { Suspense } from "react";
 
@@ -11,11 +12,13 @@ async function fetchCategories() {
 
   const res = await client.getEntries({
     content_type: "resourcesPage",
+    order: ["fields.title"],
     include: 2,
   });
 
   return res.items;
 }
+
 
 export default async function Home({ searchParams }) {
   const { category } = searchParams;
@@ -36,6 +39,7 @@ export default async function Home({ searchParams }) {
         </p>
       </section>
       <section>
+        <TabMobile cat={cat} />
         <Tab cat={cat} />
         <Suspense>
           <ResourceContainer category={category} />

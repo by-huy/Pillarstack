@@ -20,7 +20,7 @@ export default function TabButtons({ cat }) {
   const activeCategory = searchParams.get("category") || "";
 
   return (
-    <div className="flex mb-8 justify-center gap-x-2">
+    <div className="mb-8 justify-center gap-x-2 flex-wrap gap-y-2 hidden sm:flex">
       {/* Filtering button for "All" category */}
       <button
         onClick={() => {
