@@ -21,16 +21,16 @@ export default function ResourceCard({ resource }) {
       </div>
       <div className=" bg-dark-charcoal p-6 flex justify-between items-center">
         <div>
-          <h2 className="font-semibold text-h6">{title}</h2>
+          <h2 className="font-semibold text-h6 xl:text-h5 2xl:text-h4">{title}</h2>
           <div className="tags">
             {tagNames.map((tag, index) => (
-              <span className="pr-2 text-xs text-light-gray" key={index}>
+              <span className="pr-2 text-xs xl:text-sm 2xl:text-base text-light-gray" key={index}>
                 {tag}
               </span>
             ))}
           </div>
         </div>
-        <div className="flex items-center justify-center px-3 py-1 bg-primary rounded-full text-super-dark-gray font-semibold text-xs">
+        <div className="flex items-center justify-center px-3 py-1 bg-primary rounded-full text-super-dark-gray font-semibold text-xs xl:text-sm 2xl:text-base">
           <span>{category.fields.category}</span>
         </div>
       </div>

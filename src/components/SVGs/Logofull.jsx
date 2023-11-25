@@ -3,7 +3,7 @@ import React from "react";
 export const LogoFull = () => {
   return (
     <svg
-        className="hidden md:block"
+        className="hidden md:block xl:w-72 2xl:w-96"
       width="200"
       height="68"
       viewBox="0 0 613 68"

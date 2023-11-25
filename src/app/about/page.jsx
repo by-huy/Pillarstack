@@ -24,7 +24,7 @@ export default function About() {
           About <span className="text-light-gray">Pillarstack</span>
         </h1>
       </div>
-      <div className=" col-start-6 col-span-5 max-w-xl lg:max-w-none text-h5 md:text-h4 leading-[130%] text-light-gray font-medium space-y-7">
+      <div className=" col-start-6 col-span-5 max-w-xl lg:max-w-none text-h5 md:text-h4 xl:text-h3 2xl:text-h2 leading-[130%] text-light-gray font-medium space-y-7">
         <p className="space-y-8 flex flex-col">
           <span>
             I created Pillarstack to address the frustrations I encountered when
@@ -48,7 +48,7 @@ export default function About() {
               alt="profile headshot of Huy Nguyen "
             />
           </div>
-          <div className="text-primary text-base font-medium flex flex-col">
+          <div className="text-primary text-base xl:text-h6 2xl:text-h5 font-medium flex flex-col">
             <p className=" leading-tight">Huy Nguyen</p>
             <CopyToClipboard text="hello@huyng.xyz" onCopy={handleCopy}>
               <span className="leading-tight text-light-gray font-normal cursor-pointer hover:underline">

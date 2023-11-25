@@ -6,7 +6,7 @@ export default function Button({ children, href, ...props }) {
     <Link
       href={href}
       {...props}
-      className="text-bg rounded-lg font-semibold bg-gradient-to-br from-gradient to-primary group px-5 py-3 flex items-center gap-x-1 flex-shrink-0 transition-all duration-200"
+      className="text-bg rounded-lg font-semibold bg-gradient-to-br from-gradient to-primary group sm:px-5 sm:py-3 px-3 py-2 flex items-center gap-x-1 flex-shrink-0 transition-all duration-200 text-base xl:text-h6 2xl:text-h5"
     >
       <span>{children}</span>
       <div className="relative overflow-hidden ">

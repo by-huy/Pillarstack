@@ -38,7 +38,7 @@ export default function Footer() {
         <FooterTitle />
       </div>
       <div className="flex flex-col sm:flex-row items-start justify-between pt-6 pb-10 text-text">
-        <div className="space-x-1 pb-4 flex w-56">
+        <div className="space-x-1 pb-4 flex w-56 xl:w-96 text-base xl:text-h6 2xl:text-h5">
           <span className="w-fit flex-nowrap whitespace-nowrap">Made & Curated by</span>
           <Link
             className="font-bold relative overflow-y-hidden w-full group h-fit"
@@ -46,12 +46,12 @@ export default function Footer() {
             href="https://www.huyng.xyz"
           >
             <span className="flex group-hover:-translate-y-5 group-hover:opacity-0 transition-all ease-in-out-circ duration-500">HuyNG</span>
-            <span className="absolute inset-0 group-hover:translate-y-0 translate-y-5 transition-all ease-in-out-circ duration-500 underline flex-nowrap whitespace-nowrap">HuyNG :)</span>
+            <span className="absolute inset-0 group-hover:translate-y-0 translate-y-5 xl:translate-y-8 transition-all ease-in-out-circ duration-500 underline flex-nowrap whitespace-nowrap">HuyNG :)</span>
           </Link>
         </div>
         <ul className="grid sm:grid-cols-2 lg:flex gap-x-12 gap-y-2">
           {links.map((link) => (
-            <li key={link.id} className="flex group">
+            <li key={link.id} className="flex group text-base xl:text-h6 2xl:text-h5">
               {link.id === 2 || link.id === 4 ? (
                 <Link
                   className="group"

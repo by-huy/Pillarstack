@@ -27,7 +27,7 @@
   }
 
   .section-padding {
-    @apply  px-8 sm:px-[5%];
+    @apply  px-6 sm:px-[5%];
   }
 
   h1,
