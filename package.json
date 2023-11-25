@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
     "@vercel/analytics": "^1.1.1",
     "contentful": "^10.6.5",
     "framer-motion": "^10.16.4",
