@@ -26,7 +26,7 @@ export default async function Home({ searchParams }) {
 
   return (
     <main>
-      <section className="mx-auto text-center max-w-xl lg:max-w-2xl xl:max-w-3xl  2xl:max-w-[60%] space-y-5 mt-20 mb-32">
+      <section className="mx-auto text-center max-w-xl lg:max-w-2xl xl:max-w-4xl  2xl:max-w-[60%] space-y-5 mt-20 mb-32">
         <h1 className=" text-display text-center text-accent">
           Assorted resources{" "}
           <span className=" text-light-gray">
