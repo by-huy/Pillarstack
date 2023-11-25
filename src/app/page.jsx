@@ -3,6 +3,7 @@ import Tab from "@/components/TabNavigation/TabButtons";
 import TabMobile from "@/components/TabNavigation/TabButtonsMobile";
 import { createClient } from "contentful";
 import { Suspense } from "react";
+import Skeleton from "@/components/Card/Skeleton";
 
 async function fetchCategories() {
   const client = createClient({
@@ -41,7 +42,7 @@ export default async function Home({ searchParams }) {
       <section>
         <TabMobile cat={cat} />
         <Tab cat={cat} />
-        <Suspense>
+        <Suspense fallback={<Skeleton />}>
           <ResourceContainer category={category} />
         </Suspense>
       </section>
