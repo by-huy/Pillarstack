@@ -38,8 +38,8 @@ export default function Footer() {
         <FooterTitle />
       </div>
       <div className="flex flex-col sm:flex-row items-start justify-between pt-6 pb-10 text-text">
-        <div className="space-x-1 pb-4 flex w-40">
-          <span className="w-fit flex-nowrap whitespace-nowrap">Made by</span>
+        <div className="space-x-1 pb-4 flex w-56">
+          <span className="w-fit flex-nowrap whitespace-nowrap">Made & Curated by</span>
           <Link
             className="font-bold relative overflow-y-hidden w-full group h-fit"
             target="_blank"
