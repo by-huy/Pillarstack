@@ -19,9 +19,9 @@ export default function ResourceCard({ resource }) {
           <GoArrowUpRight size={32} className=" fill-gray" />
         </div>
       </div>
-      <div className=" bg-dark-charcoal p-6 flex justify-between items-center">
+      <div className=" bg-dark-charcoal p-6 flex flex-col justify-between items-start gap-y-4">
         <div>
-          <h2 className="font-semibold text-h6 xl:text-h5 2xl:text-h4">{title}</h2>
+          <h2 className="font-semibold text-h6 xl:text-h5 2xl">{title}</h2>
           <div className="tags">
             {tagNames.map((tag, index) => (
               <span className="pr-2 text-xs xl:text-sm 2xl:text-base text-light-gray" key={index}>
