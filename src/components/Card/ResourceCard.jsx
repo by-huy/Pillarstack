@@ -20,7 +20,7 @@ export default function ResourceCard({ resource }) {
         </div>
       </div>
       
-      <div className=" bg-dark-charcoal p-6 flex flex-col @sm:flex-row justify-between items-start gap-y-4">
+      <div className=" bg-dark-charcoal p-6 flex flex-col @sm:flex-row @sm:items-center justify-between items-start gap-y-4">
         <div>
           <h2 className="font-semibold text-h6 xl:text-h5 2xl">{title}</h2>
           <div className="tags">
