@@ -5,6 +5,8 @@ import { createClient } from "contentful";
 import ResourceCard from "@/components/Card/ResourceCard";
 
 async function fetchContentful(category) {
+
+
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -22,6 +24,9 @@ async function fetchContentful(category) {
 }
 
 export default async function ResourceContainer({ category }) {
+  
+
+
   const resources = await fetchContentful(category);
 
   return (

@@ -14,11 +14,11 @@ export default function Footer() {
       href: "https://forms.gle/PftXkai3sNZquWu68",
       label: "Add a resource",
     },
-    // {
-    //   id: 3,
-    //   href: "/",
-    //   label: "Contribute to this project",
-    // },
+    {
+      id: 3,
+      href: "https://forms.gle/s84TNQcUX1P22bTE7",
+      label: "Submit feedback",
+    },
     {
       id: 4,
       href: "https://ko-fi.com/supporthuyng",
