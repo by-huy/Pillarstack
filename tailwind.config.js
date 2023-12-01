@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      'display': ['clamp(2.75rem, 5vw, 7rem)', {
+      'display': ['clamp(2.75rem, 4.25vw, 6rem)', {
         lineHeight: '96.5%',
         letterSpacing: '-3.5%',
         fontWeight: '700'
