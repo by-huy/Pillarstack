@@ -34,7 +34,7 @@ export default async function Home({ searchParams }) {
             for frontend developers and web designers.
           </span>
         </h1>
-        <p className="text-text max-w-lg mx-auto text-base xl:text-h5 2xl:text-h4 2xl:max-w-2xl">
+        <p className="text-text max-w-lg mx-auto text-base xl:text-h4 2xl:text-h3 2xl:max-w-2xl">
           Explore curated and handpicked goodies that enhance your workflow and
           cultivate your growth as a developer and designer.
         </p>
