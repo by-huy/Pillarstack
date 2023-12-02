@@ -5,6 +5,7 @@ import { createClient } from "contentful";
 import { Suspense } from "react";
 import Skeleton from "@/components/Card/Skeleton";
 
+
 async function fetchCategories() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
@@ -20,7 +21,6 @@ async function fetchCategories() {
   return res.items;
 }
 
-
 export default async function Home({ searchParams }) {
   const { category } = searchParams;
   const cat = await fetchCategories();
@@ -28,6 +28,8 @@ export default async function Home({ searchParams }) {
   return (
     <main>
       <section className="mx-auto text-center max-w-xl lg:max-w-2xl xl:max-w-3xl  2xl:max-w-[55%] space-y-5 mt-20 mb-32">
+        
+      
         <h1 className=" text-display text-center text-accent">
           Assorted resources{" "}
           <span className=" text-light-gray">
