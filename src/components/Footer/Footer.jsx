@@ -76,7 +76,7 @@ export default function Footer() {
           {links.map((link) => (
             <li
               key={link.id}
-              className="flex w-fit group text-base xl:text-h6 2xl:text-h5"
+              className="flex w-fit group text-base xl:text-h7 2xl:text-h5"
             >
               {link.id === 2 || link.id === 4 ? (
                 <Link
