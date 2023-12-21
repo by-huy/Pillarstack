@@ -4,7 +4,16 @@ import { createClient } from "contentful";
 // Components
 import ResourceCard from "@/components/Card/ResourceCard";
 
-async function fetchContentful(category) {
+export async function GET(request) {
+  const url = new URL(request.url);
+  const limit = url.searchParams.get("limit") || 6;
+
+  const resources = await fetchContentful(category, skip, limit);
+
+  
+}
+
+async function fetchContentful(category, skip, limit) {
 
 
   const client = createClient({
@@ -15,6 +24,8 @@ async function fetchContentful(category) {
   const res = await client.getEntries({
     content_type: "resourcesPage",
     include: 2,
+    skip, 
+    limit,
     order: ["fields.title"],
     "fields.category.sys.contentType.sys.id": "categories",
     "fields.category.fields.category": category === "all" ? null : category,
@@ -24,10 +35,10 @@ async function fetchContentful(category) {
 }
 
 export default async function ResourceContainer({ category }) {
-  
+ 
 
 
-  const resources = await fetchContentful(category);
+  const resources = await fetchContentful(category, skip, limit);
 
   return (
     <>
