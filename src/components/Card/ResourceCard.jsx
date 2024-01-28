@@ -9,7 +9,9 @@ export default function ResourceCard({ resource }) {
   const tagNames = tags.map((tag) => tag.fields.tag);
   tagNames.sort()
 
+
   return (
+    console.log(tagNames),
     <Link href={`/resources/${slug}`} className="bg-dark-charcoal border-4 border-outline rounded-xl border-opacity-15  overflow-hidden w-full hover:border-opacity-50 transition-colors duration-150 ease-in group @container ">
       <div className=" bg-super-dark-gray flex relative items-center justify-center pb-[50%] pt-[50%] rounded-b-2xl">
         <div className="absolute w-2/3 rounded-3xl overflow-hidden transition-all shadow-shine group-hover:shadow-bright bg-transparent bg-opacity-0 ">
@@ -20,12 +22,12 @@ export default function ResourceCard({ resource }) {
         </div>
       </div>
       
-      <div className=" bg-dark-charcoal p-6 flex flex-col @[27rem]:flex-row @[27rem]:items-center justify-between items-start gap-y-4">
+      <div className=" bg-dark-charcoal p-6 flex flex-col @[30rem]:flex-row @[30rem]:items-center justify-between items-start gap-y-4">
         <div>
-          <h2 className="font-semibold text-h6 xl:text-h5 2xl">{title}</h2>
+          <h2 className="font-semibold text-h6 xl:text-h5">{title}</h2>
           <div className="tags">
             {tagNames.map((tag, index) => (
-              <span className="pr-2 text-xs xl:text-sm 2xl:text-base text-light-gray" key={index}>
+              <span className="pr-3 text-xs xl:text-sm 2xl:text-base text-light-gray" key={index}>
                 {tag}
               </span>
             ))}

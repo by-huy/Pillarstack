@@ -35,9 +35,6 @@ async function fetchContentful(category, skip, limit) {
 }
 
 export default async function ResourceContainer({ category }) {
- 
-
-
   const resources = await fetchContentful(category);
 
   return (

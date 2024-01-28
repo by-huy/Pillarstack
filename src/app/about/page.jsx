@@ -24,7 +24,7 @@ export default function About() {
           About <span className="text-light-gray">Pillarstack</span>
         </h1>
       </div>
-      <div className=" col-start-6 col-span-5 max-w-xl lg:max-w-none text-h5 md:text-h4 xl:text-h3 2xl:text-h2 leading-[130%] text-light-gray font-medium space-y-7">
+      <div className=" col-start-6 col-span-5 max-w-xl lg:max-w-none text-h5 md:text-h4 xl:text-h3  leading-[130%] text-light-gray font-medium space-y-7">
         <p className="space-y-8 flex flex-col">
           <span>
             I created Pillarstack to address the frustrations I encountered when

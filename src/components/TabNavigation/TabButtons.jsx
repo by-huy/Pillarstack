@@ -27,7 +27,7 @@ export default function TabButtons({ cat }) {
         onClick={() => {
           router.push("/", { scroll: false });
         }}
-        className={`py-1 px-4 flex gap-x-1 font-medium items-center border border-dim-gray rounded-full hover:border-text transition-all text-sm xl:text-h6 2xl:text-h5 ${
+        className={`py-1 px-4 flex gap-x-1 font-medium items-center border border-dim-gray rounded-full hover:border-text transition-all text-sm xl:text-h6 ${
           activeCategory === "" ? "bg-accent text-bg" : " bg-bg text-accent"
         }`}
       >
@@ -45,7 +45,7 @@ export default function TabButtons({ cat }) {
               activeCategory === item ? "text-bg bg-accent" : " bg-bg text-accent"
             }`}
           >
-            <span className="text-sm xl:text-h6 2xl:text-h5">{item}</span>
+            <span className="text-sm xl:text-h6 ">{item}</span>
             <span className={`flex justify-center items-center ${activeCategory === item ? "text-bg" : "text-text"} text-xxs xl:text-xs 2xl:text-sm leading-none`}>
               {count}
           </span>

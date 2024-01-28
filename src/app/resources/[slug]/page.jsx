@@ -54,8 +54,8 @@ export default async function ResourceDetails({ params }) {
         </div>
         <div className="w-full mt-12 md:mt-0 md:w-1/2">
           <div className="flex flex-col gap-y-3 items-start">
-            <h1 className="text-h4 font-bold">{resource.fields.title}</h1>
-            <p className=" text-text text-base max-w-md pb-3 ">
+            <h1 className="text-h4 xl:text-h3 font-bold">{resource.fields.title}</h1>
+            <p className=" text-text text-base xl:text-h6 2xl:text-h5 max-w-[35ch] pb-3 ">
               {resource.fields.description}
             </p>
             <Button target="_blank" rel="noopener noreferrer" href={resource.fields.link}>
@@ -63,19 +63,19 @@ export default async function ResourceDetails({ params }) {
             </Button>
           </div>
 
-          <div className="flex flex-col gap-x-2 mt-12 divide-y-2 divide-outline divide-opacity-20">
+          <div className="flex flex-col gap-x-2 mt-12 divide-y-2 divide-outline divide-opacity-20 text-xs xl:text-base 2xl:text-h6">
             <div className=" gap-x-1 grid grid-cols-12 border-t-2 border-outline border-opacity-20 py-2">
-              <h2 className="text-sm font-semibold col-span-4">Category</h2>
-              <span className="text-sm col-span-8 text-text px-1">
+              <h2 className=" font-semibold col-span-4">Category</h2>
+              <span className=" col-span-8 text-text px-1">
                 {resource.fields.category.fields.category}
               </span>
             </div>
             <div className=" gap-x-1 grid grid-cols-12 ">
-              <h2 className="text-sm font-semibold col-span-4 pt-2">Tags</h2>
+              <h2 className=" font-semibold col-span-4 pt-2">Tags</h2>
               <span className="flex flex-col col-span-8  text-text">
                 {resource.fields.tags.map((tag) => (
                   <span
-                    className="text-sm py-2 border-b-2 border-outline border-opacity-20 px-1"
+                    className=" py-2 border-b-2 border-outline border-opacity-20 px-1"
                     key={tag.sys.id}
                   >
                     {tag.fields.tag}
