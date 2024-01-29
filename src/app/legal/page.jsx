@@ -6,6 +6,19 @@ import Image from "next/image";
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
+export const metadata = {
+  metadataBase: new URL('https://pillarstack.com'),
+  alternates: {
+    canonical: '/legal',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
+  title: "Pillarstack — Legal Information",
+  description:
+    "Legal details on trademarks and user privacy on Pillarstack",
+};
+
 export default function About() {
   const [copied, setCopied] = useState(false);
 

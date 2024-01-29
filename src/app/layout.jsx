@@ -22,7 +22,7 @@ export const metadata = {
       'en-US': '/en-US',
     },
   },
-  title: "Pillarstack",
+  title: "Pillarstack — Resources for web developers and designers",
   description:
     "Assorted resources for frontend developers and web designers. Explore curated and handpicked goodies that enhance your workflow and cultivate your growth.",
 };

@@ -7,6 +7,19 @@ import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 
+export const metadata = {
+  metadataBase: new URL('https://pillarstack.com'),
+  alternates: {
+    canonical: '/about',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
+  title: "Pillarstack — About Pillarstack",
+  description:
+    "Learn more about Pillarstack and the rationale behind its creation.",
+};
+
 export default function About() {
   const [copied, setCopied] = useState(false);
 
@@ -16,6 +29,8 @@ export default function About() {
       setCopied(false);
     }, 2000);
   };
+
+  
 
   return (
     <div className="my-20 flex-col flex lg:grid lg:grid-cols-12">

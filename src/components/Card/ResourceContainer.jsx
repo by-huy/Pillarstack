@@ -4,14 +4,6 @@ import { createClient } from "contentful";
 // Components
 import ResourceCard from "@/components/Card/ResourceCard";
 
-export async function GET(request) {
-  const url = new URL(request.url);
-  const limit = url.searchParams.get("limit") || 6;
-
-  const resources = await fetchContentful(category, skip, limit);
-
-  
-}
 
 async function fetchContentful(category, skip, limit) {
 

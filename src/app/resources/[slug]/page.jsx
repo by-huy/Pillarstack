@@ -20,6 +20,8 @@ export async function generateStaticParams() {
   }));
 }
 
+
+
 async function fetchResource({ slug }) {
   const res = await client.getEntries({
     content_type: "resourcesPage",
@@ -29,6 +31,8 @@ async function fetchResource({ slug }) {
   return res.items[0];
 }
 
+
+
 export default async function ResourceDetails({ params }) {
   const resource = await fetchResource(params);
 
@@ -36,7 +40,7 @@ export default async function ResourceDetails({ params }) {
     <section className="mt-8">
       <Link href="/" className="flex items-center gap-x-1 pl-2">
         <GoArrowLeft color="#F7F7F7" size={24}/>
-        <span className=" font-semibold text-text">Back</span>
+        <span className=" font-semibold text-text text-base">Back</span>
       </Link>
       <div className="flex flex-col md:flex-row mt-5 gap-x-10 lg:gap-x-16 justify-center items-center">
         <div className=" bg-super-dark-gray flex relative items-center justify-center md:pb-[25%] md:pt-[25%] pt-[50%] pb-[50%] rounded-2xl w-full md:w-1/2 border-4 border-outline border-opacity-15">
@@ -55,7 +59,7 @@ export default async function ResourceDetails({ params }) {
         <div className="w-full mt-12 md:mt-0 md:w-1/2">
           <div className="flex flex-col gap-y-3 items-start">
             <h1 className="text-h4 xl:text-h3 font-bold">{resource.fields.title}</h1>
-            <p className=" text-text text-base xl:text-h6 2xl:text-h5 max-w-[35ch] pb-3 ">
+            <p className=" text-text text-base xl:text-h6 2xl:text-h5 max-w-[50ch] pb-3 ">
               {resource.fields.description}
             </p>
             <Button target="_blank" rel="noopener noreferrer" href={resource.fields.link}>
