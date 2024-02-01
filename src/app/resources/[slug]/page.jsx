@@ -65,12 +65,11 @@ export default async function ResourceDetails({ params }) {
           <div className="absolute w-2/3 rounded-3xl overflow-hidden  shadow-shine bg-transparent bg-opacity-0 ">
             <Image
               priority={true}
-              quality={100}
               alt={resource.fields.title}
               src={"https:" + resource.fields.thumbnail.fields.file.url}
-              className="w-full"
-              width={200}
-              height={200}
+              className="w-auto h-auto"
+              width={800}
+              height={800}
             />
           </div>
         </div>
