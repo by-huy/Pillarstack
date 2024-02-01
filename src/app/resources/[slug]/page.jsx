@@ -9,6 +9,29 @@ const client = createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
 });
 
+export async function generateMetaData({ params }) {
+  try {
+    const resource = await fetchResource(params);
+    if (!resource)
+      return {
+        title: "404 Not Found",
+        description:
+          "The resource you are looking for does not exist or it has been removed.",
+      };
+    return {
+      title: resource.fields.title,
+      description: resource.fields.description,
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      title: "404 Not Found",
+      description:
+        "The resource you are looking for does not exist or it has been removed.",
+    };
+  }
+}
+
 export async function generateStaticParams() {
   const res = await client.getEntries({
     content_type: "resourcesPage",
@@ -19,8 +42,6 @@ export async function generateStaticParams() {
   }));
 }
 
-
-
 async function fetchResource({ slug }) {
   const res = await client.getEntries({
     content_type: "resourcesPage",
@@ -30,15 +51,13 @@ async function fetchResource({ slug }) {
   return res.items[0];
 }
 
-
-
 export default async function ResourceDetails({ params }) {
   const resource = await fetchResource(params);
 
   return (
     <section className="mt-8">
       <Link scroll={false} href="/" className="flex items-center gap-x-1 pl-2">
-        <GoArrowLeft color="#F7F7F7" size={24}/>
+        <GoArrowLeft color="#F7F7F7" size={24} />
         <span className=" font-semibold text-text text-base">Back</span>
       </Link>
       <div className="flex flex-col md:flex-row mt-5 gap-x-10 lg:gap-x-16 justify-center items-center">
@@ -57,11 +76,17 @@ export default async function ResourceDetails({ params }) {
         </div>
         <div className="w-full mt-12 md:mt-0 md:w-1/2">
           <div className="flex flex-col gap-y-3 items-start">
-            <h1 className="text-h4 xl:text-h3 font-bold">{resource.fields.title}</h1>
+            <h1 className="text-h4 xl:text-h3 font-bold">
+              {resource.fields.title}
+            </h1>
             <p className=" text-text text-base xl:text-h6 2xl:text-h5 max-w-[50ch] text-balance pb-3 ">
               {resource.fields.description}
             </p>
-            <Button target="_blank" rel="noopener noreferrer" href={resource.fields.link}>
+            <Button
+              target="_blank"
+              rel="noopener noreferrer"
+              href={resource.fields.link}
+            >
               View Source
             </Button>
           </div>

@@ -1,37 +1,26 @@
-"use client"
-
 import profile from "../../../public/images/profile.webp";
 import Image from "next/image";
+import Clipboard from "@/libs/Clipboard/Clipboard";
 
-import { useState } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-
-
-// export const metadata = {
-//   metadataBase: new URL('https://pillarstack.com'),
-//   alternates: {
-//     canonical: '/about',
-//     languages: {
-//       'en-US': '/en-US',
-//     },
-//   },
-//   title: "Pillarstack — About Pillarstack",
-//   description:
-//     "Learn more about Pillarstack and the rationale behind its creation.",
-// };
+export const metadata = {
+  metadataBase: new URL("https://pillarstack.com"),
+  alternates: {
+    canonical: "/about",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  title: "Pillarstack — About",
+  description:
+    "Learn more about Pillarstack and the rationale behind its creation.",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
+};
 
 export default function About() {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    setCopied(true);
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000);
-  };
-
-  
-
   return (
     <div className="my-20 flex-col flex lg:grid lg:grid-cols-12">
       <div className="text-display col-span-4">
@@ -65,11 +54,7 @@ export default function About() {
           </div>
           <div className="text-primary text-base xl:text-h6 2xl:text-h5 font-medium flex flex-col">
             <p className=" leading-tight">Huy Nguyen</p>
-            <CopyToClipboard text="hello@huyng.xyz" onCopy={handleCopy}>
-              <span className="leading-tight text-light-gray font-normal cursor-pointer hover:underline">
-                {copied ? "Copied to clipboard!" : "hello@huyng.xyz"}
-              </span>
-            </CopyToClipboard>
+            <Clipboard />
           </div>
         </div>
       </div>

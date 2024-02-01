@@ -15,16 +15,21 @@ const overusedgrotesk = localFont({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://pillarstack.com'),
+  metadataBase: new URL("https://pillarstack.com"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
     languages: {
-      'en-US': '/en-US',
+      "en-US": "/en-US",
     },
   },
   title: "Pillarstack — Resources for web developers and designers",
   description:
     "Assorted resources for frontend developers and web designers. Explore curated and handpicked goodies that enhance your workflow and cultivate your growth.",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
 };
 
 export default function RootLayout({ children }) {
