@@ -67,7 +67,7 @@ export default async function ResourceDetails({ params }) {
               priority={true}
               alt={resource.fields.title}
               src={"https:" + resource.fields.thumbnail.fields.file.url}
-              className="w-auto h-auto"
+              className="h-full w-full"
               width={800}
               height={800}
             />
