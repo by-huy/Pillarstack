@@ -5,7 +5,6 @@ import { createClient } from "contentful";
 import { Suspense } from "react";
 import Skeleton from "@/components/Card/Skeleton";
 
-
 async function fetchCategories() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
@@ -23,13 +22,13 @@ async function fetchCategories() {
 
 export default async function Home({ searchParams }) {
   const { category } = searchParams;
+  const  page  = searchParams["page"] ?? "1";
+  const  per_page  = searchParams["per_page"] ?? "20";
   const cat = await fetchCategories();
 
   return (
     <main>
       <section className="mx-auto flex flex-col items-center space-y-5 mt-20 mb-32">
-        
-      
         <h1 className=" text-display max-w-[20ch] text-center text-accent">
           Assorted resources{" "}
           <span className=" text-light-gray">
@@ -45,7 +44,11 @@ export default async function Home({ searchParams }) {
         <TabMobile cat={cat} />
         <Tab cat={cat} />
         <Suspense fallback={<Skeleton />}>
-          <ResourceContainer category={category} />
+          <ResourceContainer
+            category={category}
+            page={page}
+            per_page={per_page}
+          />
         </Suspense>
       </section>
     </main>
