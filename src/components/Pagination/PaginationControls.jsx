@@ -14,7 +14,7 @@ export default function PaginationControls({
 
   return (
     <div>
-      <div className="flex justify-center space-x-5 text-base xl:text-h7 2xl:text-h5 mt-16">
+      <div className="flex justify-center space-x-5 text-base xl:text-h7 2xl:text-h5 mt-8 md:mt-16">
         <button
             disabled={!hasPrevPage}
           className="text-accent text-lg font-semibold disabled:text-dim-gray transition-all duration-300 ease-in-out hover:text-gray"
