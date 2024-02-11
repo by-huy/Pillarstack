@@ -27,16 +27,16 @@ export default async function Home({ searchParams }) {
 
   return (
     <main>
-      <section className="mx-auto text-center max-w-xl lg:max-w-2xl xl:max-w-3xl  2xl:max-w-[55%] space-y-5 mt-20 mb-32">
+      <section className="mx-auto flex flex-col items-center space-y-5 mt-20 mb-32">
         
       
-        <h1 className=" text-display text-center text-accent">
+        <h1 className=" text-display max-w-[20ch] text-center text-accent">
           Assorted resources{" "}
           <span className=" text-light-gray">
             for frontend developers and web designers.
           </span>
         </h1>
-        <p className="text-text max-w-lg mx-auto text-base xl:text-h6 2xl:text-h5 2xl:max-w-4xl">
+        <p className="text-text mx-auto text-base text-center xl:text-h6 2xl:text-h5 pt-5 max-w-[50ch]">
           Explore curated and handpicked goodies that enhance your workflow and
           cultivate your growth as a developer and designer.
         </p>
