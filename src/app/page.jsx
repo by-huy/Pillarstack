@@ -1,30 +1,20 @@
 import ResourceContainer from "@/components/Card/ResourceContainer";
 import Tab from "@/components/TabNavigation/TabButtons";
 import TabMobile from "@/components/TabNavigation/TabButtonsMobile";
-import { createClient } from "contentful";
 import { Suspense } from "react";
 import Skeleton from "@/components/Card/Skeleton";
+import { getContent } from "./utils/getContent";
 
-async function fetchCategories() {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-  });
-
-  const res = await client.getEntries({
-    content_type: "resourcesPage",
-    order: ["fields.title"],
-    include: 2,
-  });
-
-  return res.items;
-}
 
 export default async function Home({ searchParams }) {
   const { category } = searchParams;
   const  page  = searchParams["page"] ?? "1";
   const  per_page  = searchParams["per_page"] ?? "20";
-  const cat = await fetchCategories();
+  const {items: categories} = await getContent({
+    content_type: "resourcesPage",
+    order: ["fields.title"],
+    include: 2,
+  });
 
   return (
     <main>
@@ -41,8 +31,8 @@ export default async function Home({ searchParams }) {
         </p>
       </section>
       <section>
-        <TabMobile cat={cat} />
-        <Tab cat={cat} />
+        <TabMobile categories={categories} />
+        <Tab categories={categories} />
         <Suspense fallback={<Skeleton />}>
           <ResourceContainer
             category={category}

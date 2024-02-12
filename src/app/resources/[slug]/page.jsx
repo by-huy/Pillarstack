@@ -46,6 +46,9 @@ async function fetchResource({ slug }) {
   const res = await client.getEntries({
     content_type: "resourcesPage",
     "fields.slug": slug,
+    
+  }, {
+    revalidate: 345600, // Add revalidation here
   });
 
   return res.items[0];

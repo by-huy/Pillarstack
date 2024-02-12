@@ -7,13 +7,13 @@ import { GoPlus } from "react-icons/go";
 
 // ... (other imports)
 
-export default function TabButtons({ cat }) {
+export default function TabButtons({ categories }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
 
   const categoryCount = {};
-  cat.forEach((resource) => {
+  categories.forEach((resource) => {
     const categoryItem = resource.fields.category.fields.category;
     categoryCount[categoryItem] = (categoryCount[categoryItem] || 0) + 1;
   });

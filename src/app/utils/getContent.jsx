@@ -6,10 +6,10 @@ export async function getContent({contentType, ...rest}) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
 
-  const response = await client.getEntries({
+  const {items, total} = await client.getEntries({
     content_type: contentType,
     ...rest,
   });
 
-  return response.items;
+  return {items, total};
 }

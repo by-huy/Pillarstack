@@ -6,12 +6,12 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 // ... (other imports)
 
-export default function TabButtons({ cat }) {
+export default function TabButtons({ categories }) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
   const categoryCount = {};
-  cat.forEach((resource) => {
+  categories.forEach((resource) => {
     const categoryItem = resource.fields.category.fields.category;
     categoryCount[categoryItem] = (categoryCount[categoryItem] || 0) + 1;
   });
