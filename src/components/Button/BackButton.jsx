@@ -1,0 +1,1 @@
+// import back button from ResourcesDetail here so it navigates back to the correct page instead of /
