@@ -1,5 +1,7 @@
 # Pillarstack - Assorted resources for frontend devs & web designers
 
+![Project Banner](https://ph-files.imgix.net/ff09f0f2-e300-4907-b7c3-0684539ba35f.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&fm=pjpg&w=1100&h=578&fit=max&dpr=1)
+
 ## How to contribute
 
 You can contribute in multiple ways:
