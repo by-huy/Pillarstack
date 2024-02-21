@@ -1,5 +1,7 @@
 import { createClient } from "contentful";
 
+//generateStaticParams here to statically generate the contents
+
 export async function getContent({contentType, ...rest}) {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,

@@ -50,6 +50,10 @@ export default function TabButtons({ categories }) {
             >
               {activeCategory === item && (
                 <motion.div
+                  transition={{
+                    duration: 0.6,
+                    ease: [0.16, 1, 0.3, 1],
+                  }}
                   layoutId="active"
                   className=" absolute inset-0 bg-accent rounded-xl"
                 />
