@@ -20,7 +20,7 @@ export default function TabButtons({ categories }) {
   const activeCategory = searchParams.get("category") || "";
 
   return (
-    <div className="mb-8 sticky py-5 backdrop-blur-xl bg-opacity-20 top-0 bg-bg z-50 justify-center gap-x-2 flex-wrap gap-y-2 hidden sm:flex">
+    <div className="mb-8 sticky top-6 z-50 justify-center gap-x-2 flex-wrap gap-y-2 hidden sm:flex">
       {/* Filtering button for "All" category */}
       <button
         aria-label="All categories"
