@@ -37,6 +37,10 @@ export default function About() {
             All trademarks, logos, brand and company names are the property of
             their respective owners.
           </span>
+
+          <span>
+           Some are affiliate links. I receive a small commission when you purchase or sign up through the links, at no extra cost for you.
+          </span>
         </p>
         <div className="flex items-center gap-x-3">
           <div className="w-10 h-10 rounded-full overflow-hidden">
