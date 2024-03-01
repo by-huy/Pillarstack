@@ -30,7 +30,7 @@ export default function About() {
       <div className=" col-start-6 col-span-5 max-w-xl lg:max-w-none text-h5 md:text-h4 leading-[130%] text-light-gray font-medium space-y-7">
         <p className="space-y-8 flex flex-col">
           <span>
-            This website does not use cookies or any other tracking technology.
+            This website use Google Analytics to analyze traffic and the usage to improve its performance and user experience. No personal information is collected.
           </span>
 
           <span>
