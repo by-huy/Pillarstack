@@ -1,6 +1,7 @@
 import Button from "@/components/Button/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { getContent } from "@/app/utils/getContent";
 import { GoArrowLeft } from "react-icons/go";
 
 export async function generateMetaData({ params }) {
