@@ -27,6 +27,11 @@ export default function Footer() {
     },
     {
       id: 5,
+      href: "https://github.com/huyngxyz/Pillarstack",
+      label: "Contribute on Github",
+    },
+    {
+      id: 6,
       href: "/legal",
       label: "Legal",
     },
@@ -72,11 +77,11 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <ul className=" grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid xl:flex gap-x-8 gap-y-3">
+        <ul className=" grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid xl:grid-cols-3 gap-x-8 gap-y-3">
           {links.map((link) => (
             <li
               key={link.id}
-              className="flex w-fit group text-base xl:text-h7 2xl:text-h5"
+              className="flex w-fit group text-base xl:text-h7 2xl:text-h6"
             >
               {link.id === 2 || link.id === 4 ? (
                 <Link
