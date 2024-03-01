@@ -1,13 +1,7 @@
 import Button from "@/components/Button/Button";
-import { createClient } from "contentful";
 import Image from "next/image";
 import Link from "next/link";
 import { GoArrowLeft } from "react-icons/go";
-
-const client = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-});
 
 export async function generateMetaData({ params }) {
   try {
@@ -33,7 +27,7 @@ export async function generateMetaData({ params }) {
 }
 
 export async function generateStaticParams() {
-  const res = await client.getEntries({
+  const res = await getContent({
     content_type: "resourcesPage",
   });
 
@@ -43,7 +37,7 @@ export async function generateStaticParams() {
 }
 
 async function fetchResource({ slug }) {
-  const res = await client.getEntries({
+  const res = await getContent({
     content_type: "resourcesPage",
     "fields.slug": slug,
     
