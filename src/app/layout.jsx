@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Header/Navbar";
 import Footer from "@/components/Footer/Footer";
-import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const overusedgrotesk = localFont({
   src: [
@@ -43,8 +43,8 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
-        <Analytics />
       </body>
+      <GoogleAnalytics gaId="G-Q3DST65NTS" />
     </html>
   );
 }
