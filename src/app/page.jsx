@@ -5,12 +5,11 @@ import { Suspense } from "react";
 import Skeleton from "@/components/Card/Skeleton";
 import { getContent } from "./utils/getContent";
 
-
 export default async function Home({ searchParams }) {
   const { category } = searchParams;
-  const  page  = searchParams["page"] ?? "1";
-  const  per_page  = searchParams["per_page"] ?? "20";
-  const {items: categories} = await getContent({
+  const page = searchParams["page"] ?? "1";
+  const per_page = searchParams["per_page"] ?? "20";
+  const { items: categories } = await getContent({
     content_type: "resourcesPage",
     order: ["fields.title"],
     include: 2,

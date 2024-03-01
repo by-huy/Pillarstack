@@ -8,7 +8,7 @@ export async function getContent({ content_type, ...rest }) {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
 
-  const {items, total} = await client.getEntries({
+  const { items, total } = await client.getEntries({
     content_type,
     ...rest,
   });
