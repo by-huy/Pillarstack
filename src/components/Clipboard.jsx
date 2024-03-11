@@ -1,7 +1,7 @@
-"use client"
+'use client';
 
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import { useState } from "react";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { useState } from 'react';
 
 export default function Clipboard() {
   const [copied, setCopied] = useState(false);
@@ -16,7 +16,7 @@ export default function Clipboard() {
   return (
     <CopyToClipboard text="hello@huyng.xyz" onCopy={handleCopy}>
       <span className="leading-tight text-light-gray font-normal cursor-pointer hover:underline">
-        {copied ? "Copied to clipboard!" : "hello@huyng.xyz"}
+        {copied ? 'Copied to clipboard!' : 'hello@huyng.xyz'}
       </span>
     </CopyToClipboard>
   );

@@ -1,54 +1,59 @@
-import Link from "next/link";
-import { FooterTitle } from "../SVGs/FooterTitle";
-import { GoArrowUpRight } from "react-icons/go";
-import Image from "next/image";
+import Link from 'next/link';
+import { GoArrowUpRight } from 'react-icons/go';
+import Image from 'next/image';
 
 export default function Footer() {
   const links = [
     {
       id: 1,
-      href: "/about",
-      label: "About",
+      href: '/about',
+      label: 'About'
     },
     {
       id: 2,
-      href: "https://forms.gle/PftXkai3sNZquWu68",
-      label: "Add a resource",
+      href: 'https://forms.gle/PftXkai3sNZquWu68',
+      label: 'Add a resource'
     },
     {
       id: 3,
-      href: "https://forms.gle/s84TNQcUX1P22bTE7",
-      label: "Submit feedback",
+      href: 'https://forms.gle/s84TNQcUX1P22bTE7',
+      label: 'Submit feedback'
     },
     {
       id: 4,
-      href: "https://ko-fi.com/supporthuyng",
-      label: "Support this project",
+      href: 'https://ko-fi.com/supporthuyng',
+      label: 'Support this project'
     },
     {
       id: 5,
-      href: "https://github.com/huyngxyz/Pillarstack",
-      label: "Contribute on Github",
+      href: 'https://github.com/huyngxyz/Pillarstack',
+      label: 'Contribute on Github'
     },
     {
       id: 6,
-      href: "/legal",
-      label: "Legal",
-    },
+      href: '/legal',
+      label: 'Legal'
+    }
   ];
 
   return (
     <footer className="mt-32 mb-16 sm:mb-0">
       <div className="border-b border-b-dim-gray pb-6">
         <span className="sr-only">PILLARSTACK</span>
-        <FooterTitle />
+        <Image
+          src="/footerTitle/footer.svg"
+          alt="footerTitle"
+          width={0}
+          height={0}
+          style={{ width: '100%', height: '100%' }}
+          priority={true}
+        />
       </div>
       <div className="flex flex-col gap-y-12 gap-x-2 md:flex-row items-start justify-between pt-6 pb-10 text-text">
         <div className="gap-y-4 b-8 flex flex-col text-base xl:text-h6 2xl:text-h5">
-          
           <div className="flex w-56 gap-x-1 xl:w-96 ">
             <span className="w-fit flex-nowrap whitespace-nowrap">
-              Made & Curated by{" "}
+              Made & Curated by{' '}
             </span>
             <Link
               className="font-bold relative overflow-y-hidden w-full group h-fit"
@@ -71,9 +76,9 @@ export default function Footer() {
             <Image
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=427808&theme=dark"
               alt="Pillarstack - Assorted resources for frontend developers and web designers | Product Hunt"
-              style={{width: "250px", height: "54px"}}
-              width="200"
-              height="54"
+              style={{ width: '250px', height: '54px' }}
+              width={0}
+              height={0}
             />
           </Link>
         </div>

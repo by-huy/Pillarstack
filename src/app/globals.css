@@ -8,14 +8,15 @@
   *::after {
     box-sizing: border-box;
   }
-
   * {
-    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     font: inherit;
   }
 
+  body {
+    @apply font-overused_grotesk antialiased bg-bg px-6 sm:px-[5%] text-accent box-border;
+  }
   img,
   svg {
     display: block;
@@ -27,7 +28,7 @@
   }
 
   .section-padding {
-    @apply  px-6 sm:px-[5%];
+    @apply px-6 sm:px-[5%];
   }
 
   h1,

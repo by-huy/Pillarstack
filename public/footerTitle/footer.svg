@@ -1,12 +1,4 @@
-import React from "react";
-
-export const FooterTitle = () => {
-  return (
-    <svg
-      viewBox="0 0 1238 148"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 1238 148" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M1111.29 2.15759H1143.22V67.9641L1195.22 2.15759H1234.7L1177.96 71.8478L1237.08 145.853H1199.97L1155.95 89.3243L1143.22 106.369V145.853H1111.29V2.15759Z"
         fill="#555555"
@@ -52,5 +44,3 @@ export const FooterTitle = () => {
         fill="#555555"
       />
     </svg>
-  );
-};

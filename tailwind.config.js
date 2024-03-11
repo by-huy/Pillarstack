@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     fontSize: {
@@ -41,9 +39,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        overusedgrotesk: ['var(--font-overusedgrotesk)'],
+        overused_grotesk: ['var(--font-overused_grotesk)'],
       },
-      
+
       letterSpacing: {
         'close': '-3.5%',
         'base': '-1%'
@@ -52,8 +50,8 @@ module.exports = {
         'base': '150%'
       },
       boxShadow: {
-        'shine': '0px 0px 58px 20px rgba(85, 85, 85, 0.20);',
-        'bright': '0px 0px 58px 20px rgba(85, 85, 85, 0.35);'
+        'shine': '0px 0px 58px 20px rgba(85, 85, 85, 0.20)',
+        'bright': '0px 0px 58px 20px rgba(85, 85, 85, 0.35)'
       },
       borderOpacity: {
         '15': '0.15'
@@ -64,7 +62,6 @@ module.exports = {
     },
   },
   plugins: [
-    'prettier-plugin-tailwindcss',
     require('@tailwindcss/container-queries'),
   ],
 }
