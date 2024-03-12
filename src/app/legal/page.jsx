@@ -2,6 +2,10 @@ import { legalMetadata } from '@/utils/metadata';
 import InfoComponent from '@/components/InfoComponent';
 
 export const metadata = legalMetadata; // metadata for SEO
+/**
+ * Renders the legal info page.
+ * @returns {JSX.Element} The rendered component.
+ */
 function About() {
   const infoData = {
     title: {

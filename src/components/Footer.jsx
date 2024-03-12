@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import { GoArrowUpRight } from 'react-icons/go';
 import Image from 'next/image';
-
+/**
+ * Footer component.
+ *
+ * @returns {JSX.Element} Renders the footer section of the website.
+ */
 export default function Footer() {
   const links = [
     {

@@ -2,6 +2,10 @@ import { aboutMetadata } from '@/utils/metadata';
 import InfoComponent from '@/components/InfoComponent';
 
 export const metadata = aboutMetadata; // metadata for SEO
+/**
+ * Renders the about page.
+ * @returns {JSX.Element} The rendered component.
+ */
 function About() {
   const infoData = {
     title: {

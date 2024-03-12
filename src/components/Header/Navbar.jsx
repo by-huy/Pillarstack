@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from './Button';
+/**
+ * Renders the navigation bar component.
+ * @returns {JSX.Element} The rendered navigation bar.
+ */
 function Navbar() {
   return (
     <header className=" border-b-2 border-b-dim-gray border-opacity-30">

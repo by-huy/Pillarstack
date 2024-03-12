@@ -1,3 +1,11 @@
+/**
+ * Button component.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.children - The content of the button.
+ * @param {string} props.href - The URL to navigate to when the button is clicked.
+ * @returns {JSX.Element} The rendered Button component.
+ */
 import Link from 'next/link';
 import { GoArrowRight } from 'react-icons/go';
 

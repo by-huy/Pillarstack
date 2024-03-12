@@ -1,3 +1,8 @@
+/**
+ * Renders the main page component.
+ *
+ * @returns {JSX.Element} The main page component.
+ */
 function MainPage() {
   return (
     <main>

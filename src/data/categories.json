@@ -1,0 +1,883 @@
+[
+  {
+    "fields": {
+      "title": "Aceternity UI",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/4bXCDHmsQuvlwEQk1lhidd/d70e04598626deb9e13dd4bae88b8989/Aceternity.webp",
+      "tags": [
+        "Frontend",
+        "Library",
+        "Animation"
+      ],
+      "slug": "aceternity-ui",
+      "link": "https://ui.aceternity.com/",
+      "description": "Premade UI Components built with Next.js, Tailwindcss \u0026 Framer Motion. Copy paste the most trending components and use them in your websites without having to worry about styling and animations.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Adobe Fonts",
+      "category": "Typography",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/7wVYCRyn17GY8uzt8AYQSi/7bd890c2f46b6c0c287e5ebae8a53783/adobefonts.webp",
+      "tags": [
+        "Assets",
+        "Web Design"
+      ],
+      "slug": "adobe-fonts",
+      "link": "https://fonts.adobe.com/",
+      "description": "Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every day. No need to worry about licensing, and you can use fonts from Adobe Fonts on the web or in desktop applications."
+    }
+  },
+  {
+    "fields": {
+      "title": "Arnau Ros",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/7mtY4vM3kIOFW7JkS1Uj4W/e53a14ea65a1a3a01dda1e59694aa60c/arnau.webp",
+      "tags": [
+        "Learning",
+        "Web Design",
+        "Freelance"
+      ],
+      "slug": "arnau-ros",
+      "link": "https://www.youtube.com/c/arnauros",
+      "description": "Videos about Web Design, Webflow, Freelancing, and No Code.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Art Directed Mockups",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/nYOPhaIYh9IXCSgmQzB37/a70c5b160a4cc390546abcf3f638e607/artdirected.webp",
+      "tags": [
+        "Assets",
+        "Mockups"
+      ],
+      "slug": "art-directed-mockups",
+      "link": "https://artdirected.design/",
+      "description": "Thoughtfully crafted, realistic, premium mockups that do not look like everything else. Improve your branding presentations, social media presence and delight your clients. All mockups have real shadows, beautiful art directed scenes and urban scenarios and are over 5000px. Art Directed is a design resources company."
+    }
+  },
+  {
+    "fields": {
+      "title": "Astro",
+      "category": "Technologies",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/4MQw9msSMQb4YbdUxzw54/892da2e48b37e2b67c31c9f6ca65c0cf/astro.webp",
+      "tags": [
+        "Frontend",
+        "Framework"
+      ],
+      "slug": "astro",
+      "link": "https://astro.build/",
+      "description": "The web framework for content-driven websites. Astro powers the world's fastest websites, client-side web apps, dynamic API endpoints, and everything in-between.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Atipo Foundry",
+      "category": "Typography",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/1NAfUEuUSVwHDcjtb4EBIx/7e399e6cf3a78718f763c4170dfe1e67/atipo.webp",
+      "tags": [
+        "Assets",
+        "Web Design"
+      ],
+      "slug": "atipo-foundry",
+      "link": "https://www.atipofoundry.com/",
+      "description": "An independent digital typeface foundry and graphic design studio."
+    }
+  },
+  {
+    "fields": {
+      "title": "Awwwards",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/37RaH7pTST9LOiUB0HXdXI/a78e32c4903366fd0541f56280464ed8/awwwards.webp",
+      "tags": [
+        "Frontend",
+        "Web Design",
+        "UI/UX"
+      ],
+      "slug": "awwwards",
+      "link": "https://www.awwwards.com/",
+      "description": "Awwwards showcase and award websites that demonstrate exceptional design, innovation, and user experience. The platform features a collection of websites that are evaluated by a panel of judges based on criteria such as design, creativity, usability, and content."
+    }
+  },
+  {
+    "fields": {
+      "title": "Blender",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/67NeyAK4X6jLK0XuaVU4Dp/6a17a88b6d3b443ee93602d3b21aea34/Blender.webp",
+      "tags": [
+        "3D",
+        "Animation"
+      ],
+      "slug": "blender",
+      "link": "https://www.blender.org/",
+      "description": "Blender is a free and open-source 3D computer graphics software tool set used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and, formerly, video games."
+    }
+  },
+  {
+    "fields": {
+      "title": "CleanShot X",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/4YvvGDwvP5HkkxUQZmmJpI/ceb2093941e144f12c8b7f42c60888c3/Screen_Studio-2.webp",
+      "tags": [
+        "Screen Recording"
+      ],
+      "slug": "cleanshot-x",
+      "link": "https://cleanshot.sjv.io/huyng",
+      "description": "CleanShot X is the best screenshot and screen recording app for Mac with a built-in annotation tool, Cloud uploading, scrolling capture, and a lot more."
+    }
+  },
+  {
+    "fields": {
+      "title": "Codrops",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3o3qrvdUtSGY4H2eUfUeyf/50225fc64047073413ef2004178568b2/codrops.webp",
+      "tags": [
+        "Frontend",
+        "Web Design"
+      ],
+      "slug": "codrops",
+      "link": "https://tympanus.net/codrops/",
+      "description": "Keeping web professionals inspired \u0026 up-to-date since 2009"
+    }
+  },
+  {
+    "fields": {
+      "title": "Coursera",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2GNuB5UtQGWwGyVthR5M0t/19414a828801de6446d227b7c5d64abe/coursera.webp",
+      "tags": [
+        "Learning",
+        "Online Courses"
+      ],
+      "slug": "coursera",
+      "link": "https://www.coursera.org/",
+      "description": "Learn new job skills in online courses from industry leaders like Google, IBM, \u0026 Meta. Advance your career with top degrees from Michigan, Penn, Imperial \u0026 more. "
+    }
+  },
+  {
+    "fields": {
+      "title": "Curated.design",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2AWOlbTGTg3E7wkQN7EHe2/e5b045c495a5b490c2876ae32aebf8ce/curateddesign.webp",
+      "tags": [
+        "Web Design",
+        "UI/UX"
+      ],
+      "slug": "curated-design",
+      "link": "https://www.curated.design/",
+      "description": "Unleash your creativity with out-of-this-world web design inspiration from across the web."
+    }
+  },
+  {
+    "fields": {
+      "title": "Dark Mode Design",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/1bVTuhsyWy6LfkkArvglcQ/20b38e0e3f5813eb47310c60c1235a7d/darkmodedesign.webp",
+      "tags": [
+        "Frontend",
+        "UI/UX",
+        "Web Design"
+      ],
+      "slug": "dark-mode-design",
+      "link": "https://www.darkmodedesign.com/",
+      "description": "Dark Mode Design is a showcase of beautifully designed and inspiring dark mode websites. Dim the lights, lower your screen brightness, and enjoy."
+    }
+  },
+  {
+    "fields": {
+      "title": "Doing Cool Stuff",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/1LIipBuT0yfY9qjPa7SYuE/ce5ba28efeb92075fd7920cd9606983d/doingcoolstuff.webp",
+      "tags": [
+        "UI/UX",
+        "Web Design"
+      ],
+      "slug": "doing-cool-stuff",
+      "link": "https://www.doingcoolstuff.xyz/",
+      "description": "A directory of brand, motion and digital product design studios doing cool stuff.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Domestika",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/70u1tcTs2v9gGKiD0HXrjg/b8498eea8c9080bfde57a061bbdf2774/domestika.webp",
+      "tags": [
+        "Online Courses",
+        "Learning"
+      ],
+      "slug": "domestika",
+      "link": "https://www.domestika.org/",
+      "description": "Domestika is the largest creative community. Learn and share from anywhere with online courses taught by the best professionals in the world of design and creativity."
+    }
+  },
+  {
+    "fields": {
+      "title": "Easings",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3vgFTemHLtrFBA26sTcmA6/34586cbfd94be062192cd94f7065267a/easings.webp",
+      "tags": [
+        "Animation"
+      ],
+      "slug": "easings",
+      "link": "https://easings.net/",
+      "description": "This page helps you choose the right easing function.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Figma",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/44JdwbgyJBqUUSrEwbvQvP/efa13adf0a12939881b2ea452235e12f/Figma__2_.webp",
+      "tags": [
+        "Web Design",
+        "UI/UX"
+      ],
+      "slug": "figma",
+      "link": "https://www.figma.com?utm_medium=affiliate\u0026utm_source=partnerstack\u0026utm_campaign={partner_key}\u0026link=homepage",
+      "description": "Figma is the leading collaborative design tool for building meaningful products. Seamlessly design, prototype, develop, and collect feedback in a single platform."
+    }
+  },
+  {
+    "fields": {
+      "title": "Fireship",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2GMD5zcoVuOBjHHZhRY3aV/d8590ca192154d6763086b1d3d1c3676/fireship.webp",
+      "tags": [
+        "Frontend",
+        "Learning"
+      ],
+      "slug": "fireship",
+      "link": "https://www.youtube.com/c/fireship/featured",
+      "description": "High-intensity ⚡ code tutorials and tech news to help you ship your app faster. New videos every week covering the topics every programmer should know. "
+    }
+  },
+  {
+    "fields": {
+      "title": "Flux Academy",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3lteRUtHIwxJtP3yNSm5Xp/3372f34104bedbd25070106cfeb3f827/fluxacademy.webp",
+      "tags": [
+        "Learning",
+        "Web Design",
+        "Freelance"
+      ],
+      "slug": "flux-academy",
+      "link": "https://www.youtube.com/@FluxAcademy",
+      "description": "Learn to be a more successful and profitable web designer: master the latest trends, tools, and technologies, and make it easy to get and retain high-value dream clients. Overall, a great channel for web design and freelancing."
+    }
+  },
+  {
+    "fields": {
+      "title": "Fontshare",
+      "category": "Typography",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/4PySRTE6n70Csd9mdYaz33/b88a6c0287531207a98da9eb2e958925/fontshare.webp",
+      "tags": [
+        "Web Design",
+        "Assets"
+      ],
+      "slug": "fontshare",
+      "link": "https://www.fontshare.com/",
+      "description": "Fontshare is a free fonts service from the Indian Type Foundry (ITF), making quality fonts accessible to all."
+    }
+  },
+  {
+    "fields": {
+      "title": "Footer.design",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/13aiG0RrSDCmEDyw89qEut/865ded5e76bc52c50eb36cf4f8914e8a/footerdesign.webp",
+      "tags": [
+        "Web Design",
+        "UI/UX"
+      ],
+      "slug": "footer-design",
+      "link": "https://www.footer.design/",
+      "description": "Footer is a curated gallery of the top website footer inspiration on earth. Find the footers you need and sort by type and style."
+    }
+  },
+  {
+    "fields": {
+      "title": "Framer Motion",
+      "category": "Technologies",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/Yct2cMBtAzB4VfMhAHnIp/2defe530bb34a045423745970df412cd/framermotion.webp",
+      "tags": [
+        "Library",
+        "Frontend",
+        "Animation"
+      ],
+      "slug": "framer-motion",
+      "link": "https://www.framer.com/motion/",
+      "description": "An open source motion library for React, made by Framer."
+    }
+  },
+  {
+    "fields": {
+      "title": "Frontend FYI",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/259LEdHgxUdGf0kO9tWr01/1f9cacf0b7f28f8fcd954936dd837f17/fyi.webp",
+      "tags": [
+        "Frontend",
+        "Learning",
+        "Animation"
+      ],
+      "slug": "frontend-fyi",
+      "link": "https://www.frontend.fyi",
+      "description": "A great channel for frontend only content. Jeroen focuses on a lot of things from best practices, interactions, animations, etc."
+    }
+  },
+  {
+    "fields": {
+      "title": "Frontend Mentor",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/5wYjtt4oG7ZWzH2kyxkEhx/9db55ac909afd57fa672286cda7ab8ed/frontendmentor__2_.webp",
+      "tags": [
+        "Frontend",
+        "Project-based Learning"
+      ],
+      "slug": "frontend-mentor",
+      "link": "https://www.frontendmentor.io/",
+      "description": "Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs."
+    }
+  },
+  {
+    "fields": {
+      "title": "Frontend Practice",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/5alAnpb7UygB2BnG8sIHim/f2941316f68ee34f2f7d34d5552e5b08/frontendpractice.webp",
+      "tags": [
+        "Frontend",
+        "Project-based Learning"
+      ],
+      "slug": "frontend-practice",
+      "link": "https://www.frontendpractice.com/",
+      "description": "Take your frontend skills to the next level by recreating real websites from real companies."
+    }
+  },
+  {
+    "fields": {
+      "title": "Godly",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2JjWz6P9MH3iGv3CwBlOOH/6da378b37842908a3ebfc4be0dacf415/godly.webp",
+      "tags": [
+        "Web Design",
+        "Frontend",
+        "UI/UX"
+      ],
+      "slug": "godly",
+      "link": "https://godly.website/",
+      "description": "Astronomically good web design inspiration from all over the internet\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Growth.design",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2Nk8HUKqhJAL96txox8TfX/927a2b3f43a0756dbd228fe0395571d5/Uxcasestudies.webp",
+      "tags": [
+        "UI/UX",
+        "Learning",
+        "Web Design"
+      ],
+      "slug": "growth-design",
+      "link": "https://growth.design/case-studies",
+      "description": "See exactly how companies like Tinder, Airbnb, Trello, Uber and Tesla design products that people love. One new user experience case study every month."
+    }
+  },
+  {
+    "fields": {
+      "title": "GSAP",
+      "category": "Technologies",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/27WZBqNUj84FXN2BNFJ0Tk/f06cc71ef13d807472077bb97cc3392e/gsap.webp",
+      "tags": [
+        "Library",
+        "Animation",
+        "Frontend"
+      ],
+      "slug": "gsap",
+      "link": "https://gsap.com/",
+      "description": "GSAP is an industry standard JavaScript animation library from GreenSock that lets you craft high-performance animations that work in every major browser."
+    }
+  },
+  {
+    "fields": {
+      "title": "Hyperplexed",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2LiiUcqwyBIrdVqmSGYDFl/668d4639a6f833c889be4ca1f3ae28f5/hyperplexed.webp",
+      "tags": [
+        "Frontend",
+        "Animation"
+      ],
+      "slug": "hyperplexed",
+      "link": "https://www.youtube.com/@Hyperplexed",
+      "description": "Hyperplexed is an absolute gem for frontend developers. His channel covers a lot on the process and perspective of a frontend developer."
+    }
+  },
+  {
+    "fields": {
+      "title": "Juxtopposed",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/GLXNucdpDQbuin0FlZCk3/90c26d504a02d2c9ebb987e72186cc47/juxtopposed.webp",
+      "tags": [
+        "Frontend",
+        "UI/UX"
+      ],
+      "slug": "juxtopposed",
+      "link": "https://www.youtube.com/@juxtopposed",
+      "description": "A really good UI/UX centric YouTube channel with some frontend stuff here and there. Super entertaining, and informative + a lot of cats too."
+    }
+  },
+  {
+    "fields": {
+      "title": "Kevin Powell",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3KI0EcVYpAtzjYg3459hjt/4f127d32c89d2f2ed671b5d1c8127a62/kevin.webp",
+      "tags": [
+        "Learning",
+        "Frontend"
+      ],
+      "slug": "kevin-powell",
+      "link": "https://www.youtube.com/@KevinPowell",
+      "description": "Youtuber and developer that creates content on all things CSS. Extremely helpful resource for beginners and advanced developers."
+    }
+  },
+  {
+    "fields": {
+      "title": "Microcopy",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/DHk5jwx5k3M8lWc2c6GpL/9985383fc0408ab7f1e9e811a300cbf5/microcopy.webp",
+      "tags": [
+        "Productivity",
+        "Copywriting"
+      ],
+      "slug": "microcopy",
+      "link": "https://www.microcopy.me/",
+      "description": "Search micro UX copy text: slogans, headlines, notifications, CTA, error messages, email, account preferences, and much more."
+    }
+  },
+  {
+    "fields": {
+      "title": "Minimal.Gallery",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3fYOHhyn25puwcsnl0UZcN/476e39a6f6a1aac7695467c6a7c70b69/minimalgallery.webp",
+      "tags": [
+        "Web Design",
+        "UI/UX",
+        "Frontend"
+      ],
+      "slug": "minimal-gallery",
+      "link": "https://minimal.gallery",
+      "description": "For the love of beautiful, clean and functional websites."
+    }
+  },
+  {
+    "fields": {
+      "title": "Next.js",
+      "category": "Technologies",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/vqVzYxA44ZJtJ4zy2Sx8g/8ac2759a7fecfbc33cf7e0dfc00f8e23/nextjs.webp",
+      "tags": [
+        "Framework",
+        "Frontend"
+      ],
+      "slug": "nextjs",
+      "link": "https://nextjs.org/",
+      "description": "Used by some of the world's largest companies, Next.js enables you to create full-stack Web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Notion",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/7iHq4r9lW8ifhrcJTiOCpQ/ca1f02aad05794568647df65b3ca1b73/notion.webp",
+      "tags": [
+        "AI",
+        "Productivity"
+      ],
+      "slug": "notion",
+      "link": "https://www.notion.so/",
+      "description": "A new tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team."
+    }
+  },
+  {
+    "fields": {
+      "title": "Olivier Larose",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3CGxFA8oKdKGpOcmVYUx73/d3fd97619474e50dfb11bc077cc590e2/oliver.webp",
+      "tags": [
+        "Animation",
+        "Frontend",
+        "Learning"
+      ],
+      "slug": "olivier-larose",
+      "link": "https://www.youtube.com/@olivierlarose1",
+      "description": "Olivier has awesome web animation tutorials, definitely worth checking out if you're interested in developing websites with animations and interactivity."
+    }
+  },
+  {
+    "fields": {
+      "title": "PP Foundry",
+      "category": "Typography",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2Jmmw8nky3SQhG3UG9pxMz/9391ff09d90345e32a3e7f87e92fdaa9/pangram.webp",
+      "tags": [
+        "Assets",
+        "Web Design"
+      ],
+      "slug": "pangram-pangram-foundry",
+      "link": "https://pangrampangram.com/",
+      "description": "We are dedicated to making quality typefaces that can be used in everyday designs and projects. All our fonts are free to try."
+    }
+  },
+  {
+    "fields": {
+      "title": "Raycast",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/72OC0kBOcIiCf1J0ILcsQk/01bedbc4217e6d50116cf588fa0a88e8/raycast.webp",
+      "tags": [
+        "Productivity",
+        "AI"
+      ],
+      "slug": "raycast",
+      "link": "https://www.raycast.com/",
+      "description": "Raycast lets you control your tools with a few keystrokes. It's designed to keep you focused."
+    }
+  },
+  {
+    "fields": {
+      "title": "React",
+      "category": "Technologies",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2bWRRHYN5NsCY5opPK8Hqy/4b474fe813457cf1382dd9d1eda341d8/React.webp",
+      "tags": [
+        "Library",
+        "Frontend"
+      ],
+      "slug": "react",
+      "link": "https://react.dev/",
+      "description": "React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Realtime Colors",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/7C5Cw24SGnNZ3QZaNkaQzT/c7aeb7de2044c806d8f7b126eeed9cee/realtimecolors.webp",
+      "tags": [
+        "UI/UX",
+        "Web Design"
+      ],
+      "slug": "realtime-colors",
+      "link": "https://www.realtimecolors.com/?colors=e3fcf9-021210-6218e2-2e050a-9be718\u0026fonts=Poppins-Poppins",
+      "description": "Visualize your colors \u0026 fonts on a real site."
+    }
+  },
+  {
+    "fields": {
+      "title": "Refero.design",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/6f6Vd8SDOqRc11WiNkxfP6/a1700e8ef8d8edcd19630737366d4766/refero.webp",
+      "tags": [
+        "Web Design",
+        "Frontend",
+        "UI/UX"
+      ],
+      "slug": "referodesign",
+      "link": "https://refero.design/",
+      "description": "Refero.design makes design research easier and faster than ever before. Explore over then 22,000 pages and over than 20,000 iOS screens."
+    }
+  },
+  {
+    "fields": {
+      "title": "Relume",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3cDHEex1m37alb6lUnr6FI/a1d860d260bb14c221ee95a33dfe548c/relume.webp",
+      "tags": [
+        "AI",
+        "Web Design",
+        "UI/UX"
+      ],
+      "slug": "relume",
+      "link": "https://www.relume.io/",
+      "description": "Relume is a small team of developers, designers and creatives on a mission to help web designers win in the era of no-code and generative AI."
+    }
+  },
+  {
+    "fields": {
+      "title": "Roadmap.sh",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/4wPOzr5Gji5kBp3sroK2z2/fcab6702c33738056a9137f7385bd48e/roadmapsh.webp",
+      "tags": [
+        "Frontend"
+      ],
+      "slug": "roadmapsh",
+      "link": "https://roadmap.sh/",
+      "description": "roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide developers in picking up a path and guide their learnings.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Sam Selikoff",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2AB723X6qVO48uRLtsv1z2/a873361d94ca08eb5c0ee6700f7696d8/sam.webp",
+      "tags": [
+        "UI/UX",
+        "Frontend",
+        "Web Design"
+      ],
+      "slug": "sam-selikoff",
+      "link": "https://www.youtube.com/@samselikoff/videos",
+      "description": "Sam produces high quality content on frontend development. He covers a lot on React, Framer Motion and CSS."
+    }
+  },
+  {
+    "fields": {
+      "title": "Savee",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/5HeNz6ookMZZwyp7nydrwO/6a727d1b272f0e72096097cff6ce56a7/savee.webp",
+      "tags": [
+        "Assets",
+        "Web Design"
+      ],
+      "slug": "savee",
+      "link": "https://savee.it/",
+      "description": "The best way to save and share inspiration. An inspiration gallery perfect for mood boarding and getting visual assets."
+    }
+  },
+  {
+    "fields": {
+      "title": "Screen Studio",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/5PuKqfiFSHgzhUcDBaYYrP/29643560a7ffbc67429eee26ed1c09ff/Screen_Studio.webp",
+      "tags": [
+        "Screen Recording",
+        "Freelance"
+      ],
+      "slug": "screen-studio",
+      "link": "https://screenstudio.lemonsqueezy.com?aff=w9YZL",
+      "description": "Beautiful Screen Recordings in Minutes. Creating high quality videos as easy as taking a screenshot. Designed for macOS."
+    }
+  },
+  {
+    "fields": {
+      "title": "Scrimba",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/50gZwayKdOk8nn9bIbsyVh/18cd68dec59a145751f0997d1f23a259/scrimba.webp",
+      "tags": [
+        "Frontend",
+        "Online Courses",
+        "Learning"
+      ],
+      "slug": "scrimba",
+      "link": "https://scrimba.com/",
+      "description": "Learn to code with interactive screencasts. Our courses and tutorials will teach you React, Vue, Angular, JavaScript, HTML, CSS, and more. Scrimba is the fun and easy way to learn web development."
+    }
+  },
+  {
+    "fields": {
+      "title": "Shots.so",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2ErQ8phY97jLH2hG7T82Bl/4a6f49ba5ba33111b8409cafe947536a/shots.webp",
+      "tags": [
+        "Assets"
+      ],
+      "slug": "shots-so",
+      "link": "https://shots.so/",
+      "description": "Create Amazing Mockups"
+    }
+  },
+  {
+    "fields": {
+      "title": "Stack Sorted",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/4YZWYQ1s6TYJvmF5utBawR/947a53c5f6c6f08a4482367afe39bae6/stacksorted.webp",
+      "tags": [
+        "Web Design",
+        "UI/UX"
+      ],
+      "slug": "stack-sorted",
+      "link": "https://stacksorted.com/",
+      "description": "Find Inspiration in Design Elements. Collection of the web's best designs sorted by elements. Choose an element and view projects/websites with creative designs for it."
+    }
+  },
+  {
+    "fields": {
+      "title": "Startup Websites",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/2U9bjYXks03laNkomano42/0f457c06a89bb1adb1b282feaa2dd641/startupwebsites.webp",
+      "tags": [
+        "Web Design",
+        "UI/UX"
+      ],
+      "slug": "startup-websites",
+      "link": "https://www.startupwebsites.co/",
+      "description": "Extraordinary websites from startups across the universe.\u2028Explore how the top 1% leverage design to stand out.\n"
+    }
+  },
+  {
+    "fields": {
+      "title": "Storefront Design",
+      "category": "Inspiration",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/55CDEbnVqIV4qhsh0xRoIW/739aede40605a58fc5a2f5cd7dd66855/storefrontdesign.webp",
+      "tags": [
+        "Web Design",
+        "UI/UX"
+      ],
+      "slug": "storefront-design",
+      "link": "https://www.storefront.design/",
+      "description": "Explore a curated collection of unique ecommerce storefronts updated every Friday. Use advanced filters to find design inspirations that match your preferences, or submit your site to be featured among the best. Updated weekly with fresh designs"
+    }
+  },
+  {
+    "fields": {
+      "title": "Svelte",
+      "category": "Technologies",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3hCrm39iK02gIAke5dsZPE/86720df21bdb13ac89e193eb55798df2/svelte.webp",
+      "tags": [
+        "Framework",
+        "Frontend"
+      ],
+      "slug": "svelte",
+      "link": "https://svelte.dev/",
+      "description": "Svelte is a free and open-source front-end component framework and language created by Rich Harris and maintained by the Svelte core team members."
+    }
+  },
+  {
+    "fields": {
+      "title": "TailwindCSS",
+      "category": "Technologies",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/4zpLqbHfUQ95zjkAMgFzGv/63c6a7c3df03b35d315b77c3a3656892/tailwindcss.webp",
+      "tags": [
+        "Library",
+        "Frontend"
+      ],
+      "slug": "tailwindcss",
+      "link": "https://tailwindcss.com/",
+      "description": "A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup."
+    }
+  },
+  {
+    "fields": {
+      "title": "The Net Ninja",
+      "category": "YT Channels",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/7gUZxGho5XwSxuEjJAWqC5/e3548b2f27a8f6bee4a8f186335989ae/netninja.webp",
+      "tags": [
+        "Frontend",
+        "Learning"
+      ],
+      "slug": "the-net-ninja",
+      "link": "https://www.youtube.com/@NetNinja",
+      "description": "Black-belt your web development skills. Over 2000 free programming tutorial videos on a diverse range of technologies. Highly recommended if you're trying to learn new technologies in frontend development."
+    }
+  },
+  {
+    "fields": {
+      "title": "Three.js",
+      "category": "Technologies",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/5OvZC1mREt7tjfE7WUjF1R/d2918e79fa163d6b2be58e473db84971/threejs.webp",
+      "tags": [
+        "Library",
+        "3D"
+      ],
+      "slug": "three-js",
+      "link": "https://threejs.org/",
+      "description": "Three.js is a cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser using WebGL."
+    }
+  },
+  {
+    "fields": {
+      "title": "TinyPNG",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3LMSxPoF5Baoma6IJeln8t/26963b58ed565d3f31c88a5dba028209/tinypng.webp",
+      "tags": [
+        "Assets",
+        "Optimization"
+      ],
+      "slug": "tinypng",
+      "link": "https://tinypng.com/",
+      "description": "TinyPNG uses smart lossy compression techniques to reduce the file size of your WEBP, JPEG and PNG files. By selectively decreasing the number of colors in the image, fewer bytes are required to store the data. The effect is nearly invisible but it makes a very large difference in file size!"
+    }
+  },
+  {
+    "fields": {
+      "title": "Typescale",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/6RQzS7WY3ErvKJcmyHJnM7/cd43d38bdc3a13bc02d8f89c32e10f9f/typescale.webp",
+      "tags": [
+        "Web Design",
+        "Frontend",
+        "UI/UX"
+      ],
+      "slug": "typescale",
+      "link": "https://typescale.com/",
+      "description": "Typescale - Create stunning typography, generate CSS, and find inspiration."
+    }
+  },
+  {
+    "fields": {
+      "title": "Udemy",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/74YiuILvypRHWgdtF8TQ40/d7e7f1866f682dd1a152305276f24504/udemy.webp",
+      "tags": [
+        "Online Courses",
+        "Learning"
+      ],
+      "slug": "udemy",
+      "link": "https://www.udemy.com/",
+      "description": "Udemy is an online learning and teaching marketplace with over 213,000 courses and 62 million students. Learn programming, marketing, data science and more."
+    }
+  },
+  {
+    "fields": {
+      "title": "Uncut",
+      "category": "Typography",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/7kbLo1OnNPUtp6qHqXIs21/3bd8676789207ad8c418c0b6bbaa3d0a/uncutwtf.webp",
+      "tags": [
+        "Assets",
+        "Web Design"
+      ],
+      "slug": "uncut",
+      "link": "https://uncut.wtf/",
+      "description": "Download somewhat contemporary fonts, free for commercial use."
+    }
+  },
+  {
+    "fields": {
+      "title": "Unsplash",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/3P3CDFBjLMuEtoHaEhBjjh/46712eac07e0ac6d3004026c9230a454/unsplash.webp",
+      "tags": [
+        "Assets"
+      ],
+      "slug": "unsplash",
+      "link": "https://unsplash.com/",
+      "description": "The internet’s source for visuals. Powered by creators everywhere."
+    }
+  },
+  {
+    "fields": {
+      "title": "Uxcel",
+      "category": "Upskilling",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/6ki8mA07aGnPri1RGb72id/810f59d25d5b932d9ab214d912b771a9/uxcel.webp",
+      "tags": [
+        "Learning",
+        "UI/UX",
+        "Web Design"
+      ],
+      "slug": "uxcel",
+      "link": "https://uxcel.com/",
+      "description": "Learn UX design at your own pace with guided, bite-sized education and interactive UX design courses for any role \u0026 level."
+    }
+  },
+  {
+    "fields": {
+      "title": "Webflow",
+      "category": "Tools",
+      "thumbnail": "https://images.ctfassets.net/fwy0yv14lkat/4DfZEztnolgD0qDuksAiD/4870dad7ab833eb5a60512af533881d8/webflow.webp",
+      "tags": [
+        "Web Design",
+        "Frontend"
+      ],
+      "slug": "webflow",
+      "link": "https://webflow.com/",
+      "description": "Create custom, responsive websites with the power of code — visually. Design and build your site with a flexible CMS and top-tier hosting."
+    }
+  }
+]
