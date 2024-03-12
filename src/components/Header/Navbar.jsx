@@ -25,6 +25,7 @@ function Navbar() {
             height={0}
             style={{ width: 310, height: 35 }}
             className="hidden md:block cursor-pointer"
+            priority={true}
           />
         </Link>
         <div className="flex items-center gap-x-8">
