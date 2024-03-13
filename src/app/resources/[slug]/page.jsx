@@ -1,56 +1,18 @@
-import Button from "@/components/Button/Button";
-import Image from "next/image";
-import Link from "next/link";
-import { getContent } from "@/app/utils/getContent";
-import { GoArrowLeft } from "react-icons/go";
-
-export async function generateMetaData({ params }) {
-  try {
-    const resource = await fetchResource(params);
-    if (!resource)
-      return {
-        title: "404 Not Found",
-        description:
-          "The resource you are looking for does not exist or it has been removed.",
-      };
-    return {
-      title: resource.fields.title,
-      description: resource.fields.description,
-    };
-  } catch (error) {
-    console.error(error);
-    return {
-      title: "404 Not Found",
-      description:
-        "The resource you are looking for does not exist or it has been removed.",
-    };
-  }
-}
-
-export async function generateStaticParams() {
-  const res = await getContent({
-    content_type: "resourcesPage",
-  });
-
-  return res.items.map((item) => ({
-    slug: item.fields.slug,
-  }));
-}
-
-async function fetchResource({ slug }) {
-  const res = await getContent({
-    content_type: "resourcesPage",
-    "fields.slug": slug,
-    
-  }, {
-    revalidate: 345600, // Add revalidation here
-  });
-
-  return res.items[0];
-}
-
+import Button from '@/components/Header/Button';
+import Image from 'next/image';
+import Link from 'next/link';
+import { GoArrowLeft } from 'react-icons/go';
+import categories from '@/data/categories.json';
+/**
+ * Renders a page for the details of a resource.
+ * @param {Object} props - The component props.
+ * @param {Object} props.params - The route parameters.
+ * @param {Object} props.params.slug - The resource slug.
+ * @returns {JSX.Element} The rendered component.
+ */
 export default async function ResourceDetails({ params }) {
-  const resource = await fetchResource(params);
+  const { slug } = params;
+  const resource = categories.find((resource) => resource.fields.slug === slug);
 
   return (
     <section className="mt-8">
@@ -64,7 +26,7 @@ export default async function ResourceDetails({ params }) {
             <Image
               priority={true}
               alt={resource.fields.title}
-              src={"https:" + resource.fields.thumbnail.fields.file.url}
+              src={resource.fields.thumbnail}
               className="h-full w-full"
               width={800}
               height={800}
@@ -92,18 +54,18 @@ export default async function ResourceDetails({ params }) {
             <div className=" gap-x-1 grid grid-cols-12 border-t-2 border-outline border-opacity-20 py-2">
               <h2 className=" font-semibold col-span-4">Category</h2>
               <span className=" col-span-8 text-text px-1">
-                {resource.fields.category.fields.category}
+                {resource.fields.category}
               </span>
             </div>
             <div className=" gap-x-1 grid grid-cols-12 ">
               <h2 className=" font-semibold col-span-4 pt-2">Tags</h2>
               <span className="flex flex-col col-span-8  text-text">
-                {resource.fields.tags.map((tag) => (
+                {resource.fields.tags.map((tag, index) => (
                   <span
                     className=" py-2 border-b-2 border-outline border-opacity-20 px-1"
-                    key={tag.sys.id}
+                    key={index}
                   >
-                    {tag.fields.tag}
+                    {tag}
                   </span>
                 ))}
               </span>

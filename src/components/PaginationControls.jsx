@@ -1,16 +1,24 @@
-"use client";
-import { useSearchParams, useRouter } from "next/navigation";
+/**
+ * PaginationControls component.
+ * @param {Object} props - The component props.
+ * @param {number} props.total - The total number of items.
+ * @param {boolean} props.hasNextPage - Indicates if there is a next page.
+ * @param {boolean} props.hasPrevPage - Indicates if there is a previous page.
+ * @returns {JSX.Element} The PaginationControls component.
+ */
+'use client';
+import { useSearchParams, useRouter } from 'next/navigation';
 
 export default function PaginationControls({
   total,
   hasNextPage,
-  hasPrevPage,
+  hasPrevPage
 }) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const page = searchParams.get("page") ?? "1";
-  const per_page = searchParams.get("per_page") ?? "20";
+  const page = searchParams.get('page') ?? '1';
+  const per_page = searchParams.get('per_page') ?? '20';
 
   return (
     <div>

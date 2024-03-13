@@ -1,50 +1,30 @@
-import localFont from "next/font/local";
-import "./globals.css";
-import Navbar from "@/components/Header/Navbar";
-import Footer from "@/components/Footer/Footer";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import React from 'react';
+import './globals.css';
+import { Overused_Grotesk } from '@/utils/fonts';
+import { HomeMetadata } from '@/utils/metadata';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Header/Navbar';
 
-const overusedgrotesk = localFont({
-  src: [
-    {
-      path: "../../public/fonts/OverusedGrotesk-VF.woff2",
-    },
-  ],
-  display: "block",
-  variable: "--font-overusedgrotesk",
-});
+export const metadata = HomeMetadata; // metadata for SEO
 
-export const metadata = {
-  metadataBase: new URL("https://pillarstack.com"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en-US",
-    },
-  },
-  title: "Pillarstack — Resources for web developers and designers",
-  description:
-    "Assorted resources for frontend developers and web designers. Explore curated and handpicked goodies that enhance your workflow and cultivate your growth.",
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-  },
-};
-
+/**
+ * Renders the root layout for the application.
+ * @param {Object} props - The component props.
+ * @param {JSX.Element} props.children - The child components.
+ * @returns {JSX.Element} The rendered component.
+ */
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${overusedgrotesk.variable}`}>
+    <html lang="en">
       <head>
         <link rel="canonical" href="https://pillarstack.com" />
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body className="font-overusedgrotesk antialiased bg-bg section-padding  text-accent box-border">
+      <body className={`${Overused_Grotesk.variable}`}>
         <Navbar />
         {children}
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-Q3DST65NTS" />
     </html>
   );
 }

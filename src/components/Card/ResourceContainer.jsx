@@ -1,33 +1,40 @@
-// Library
-import { getContent } from "@/app/utils/getContent";
-
-// Components
-import ResourceCard from "@/components/Card/ResourceCard";
-import PaginationControls from "../Pagination/PaginationControls";
-
-
-export default async function ResourceContainer({ category, page, per_page }) {
-  const {items: resources, total} = await getContent({
-    content_type: "resourcesPage",
-    skip: Number(page - 1) * Number(per_page),
-    limit: Number(per_page),
-    order: ["fields.title"],
-    "fields.category.sys.contentType.sys.id": "categories",
-    "fields.category.fields.category": category === "all" ? null : category,
+import ResourceCard from './ResourceCard';
+import PaginationControls from '../PaginationControls';
+import categories from '@/data/categories.json';
+/**
+ * Renders a container for the resources.
+ * @param {Object} props - The component props.
+ * @param {string} props.category - The category to filter the resources by.
+ * @param {string} props.page - The current page number.
+ * @param {string} props.per_page - The number of resources per page.
+ * @returns {JSX.Element} The rendered component.
+ */
+export default function ResourceContainer({ category, page, per_page }) {
+  /**
+   * Filters the resources by the given category.
+   */
+  const filteredResources = categories.filter((resource) => {
+    if (!category) return true;
+    return resource.fields.category === category;
   });
-
-  
+  /**
+   * Slices the filtered resources by the given page number and per page count.
+   */
+  const paging = filteredResources.slice(
+    (Number(page) - 1) * Number(per_page),
+    Number(page) * Number(per_page)
+  );
   return (
     <>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
-        {resources.map((resource) => {
-          return <ResourceCard key={resource.sys.id} resource={resource} />;
+        {paging.map((resource, index) => {
+          return <ResourceCard key={index} resource={resource} />;
         })}
       </div>
       <PaginationControls
-        hasNextPage={resources.length === Number(per_page)}
+        hasNextPage={paging.length === Number(per_page)}
         hasPrevPage={Number(page) > 1}
-        total={total}
+        total={filteredResources.length}
       />
     </>
   );

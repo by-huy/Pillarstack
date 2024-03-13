@@ -1,8 +1,13 @@
-import React from "react";
-import Image from "next/image";
-import Button from "@/components/Button/Button";
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import Button from '@/components/Header/Button';
 
-export default function ErrorPage() {
+/**
+ * Renders the error page component.
+ * @returns {JSX.Element} The rendered error page.
+ */
+function ErrorPage() {
   return (
     <div className="h-screen flex items-center justify-center -m-20 flex-col ">
       <div className="relative grid grid-cols-2 grid-rows-2 place-items-center mb-12">
@@ -21,7 +26,8 @@ export default function ErrorPage() {
           the page you’re looking for does not exist.
         </p>
       </div>
-      <Button href="/">Go Back home</Button>
+      <Button href={'/'}>Go Back home</Button>
     </div>
   );
 }
+export default ErrorPage;
