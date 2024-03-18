@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { getContent } from "@/app/utils/getContent";
 import { GoArrowLeft } from "react-icons/go";
+import ErrorPage from "@/app/not-found";
 
-export async function generateMetaData({ params }) {
+export async function generateMetadata({ params }) {
   try {
     const resource = await fetchResource(params);
     if (!resource)
@@ -51,6 +52,10 @@ async function fetchResource({ slug }) {
 
 export default async function ResourceDetails({ params }) {
   const resource = await fetchResource(params);
+
+  if (!resource) {
+    return <ErrorPage />
+  }
 
   return (
     <section className="mt-8">
