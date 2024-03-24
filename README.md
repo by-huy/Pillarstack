@@ -6,7 +6,10 @@
 
 You can contribute in multiple ways:
 1. **Submit resources**: You can submit resources via this google form [link](https://forms.gle/PftXkai3sNZquWu68)
-2. **Improving code**: If you would like to include a feature, please open an [issue](https://github.com/huyngxyz/Pillarstack/issues) or send a pull request!
+2. **Improving code**: If you would like to include a feature, please open an [issue](https://github.com/huyngxyz/Pillarstack/issues) or send a pull request! 
+
+**[UPDATE: I'm currently putting aside Pillarstack and come back to maintain in the upcoming future]. Your PR or Issues might not be read or replied to, really sorry for the inactivity**
+
 3. **Submit feedback**: If you prefer to send feedback via a form, fill the form [here](https://forms.gle/s84TNQcUX1P22bTE7)
 
 [More information](https://github.com/huyngxyz/Pillarstack/blob/main/CONTRIBUTE.md)
