@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Header/Navbar";
 import Footer from "@/components/Footer/Footer";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const overusedgrotesk = localFont({
   src: [
@@ -12,6 +12,7 @@ const overusedgrotesk = localFont({
   ],
   display: "block",
   variable: "--font-overusedgrotesk",
+  weight: "200 800",
 });
 
 export const metadata = {
